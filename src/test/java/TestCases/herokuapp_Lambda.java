@@ -22,7 +22,7 @@ public class herokuapp_Lambda extends BaseClassLambda{
 	    @Test(priority = 1)
 	    public void ValidLogin() {
 	        LoginPage page = new LoginPage(driver);
-	        ConfigReader config = new ConfigReader();
+	        config = new ConfigReader();
 
 	        driver.get("https://the-internet.herokuapp.com/login");
 	        driver.manage().window().maximize();
