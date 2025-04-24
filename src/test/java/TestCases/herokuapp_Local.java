@@ -112,7 +112,7 @@ public class herokuapp_Local extends BaseClassLocal {
         } catch (AssertionError ae) {
             getTest().log(Status.FAIL, "Assertion failed for JS Confirm: " + ae.getMessage());
         } catch (Exception e) {
-            getTest().log(Status.FAIL, "Exception while handling JS Confirm: " + e.getMessage());
+            getTest().log(Status.FAIL, "Exception while handling JS Confirm: " + e.getMessage());aaaaaaaaaaaa
         }
 
         // Handle JS Prompt
