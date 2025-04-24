@@ -23,30 +23,30 @@ public class herokuapp_Local extends BaseClassLocal {
     ConfigReader config; 
     AlertPage alpage;
 
-    @Test(priority = 1,dataProvider = "loginData",dataProviderClass = CSVReaderUtil.class)
-    public void ValidLogin() {
+    @Test(priority = 1, dataProvider = "loginData", dataProviderClass = CSVReaderUtil.class)
+    public void ValidLogin(String username, String password) {
         page = new LoginPage(getDriver());
-        config = new ConfigReader();
         getDriver().get("https://the-internet.herokuapp.com/login");
         getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        page.enterUsername(config.getAppValidUsername());
-        getTest().log(Status.INFO, "Valid Username entered in the username field");
-        page.enterPassword(config.getAppValidPassword());
-        getTest().log(Status.INFO, "Valid password entered into the password field");
+        page.enterUsername(username); // from CSV
+        getTest().log(Status.INFO, "Username entered: " + username);
+        page.enterPassword(password); // from CSV
+        getTest().log(Status.INFO, "Password entered");
         page.clickLogin();
         getTest().log(Status.INFO, "Clicked on Login Button");
 
         WebElement ele = getDriver().findElement(By.xpath("//*[@id=\"flash\"]"));
         try {
             Assert.assertTrue(ele.isDisplayed());
-            getTest().log(Status.PASS, "Element displayed : " + ele.getText());
+            getTest().log(Status.PASS, "Element displayed: " + ele.getText());
         } catch (AssertionError e) {
             getTest().log(Status.FAIL, "Element not displayed. Login failed.");
-            Assert.fail("Test failed: Login was unsuccessful. Element not found.");
+            Assert.fail("Test failed: Login was unsuccessful.");
         }
     }
+
 
     @Test(priority = 2)
     public void inValidLogin() {
