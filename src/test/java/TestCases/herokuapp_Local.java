@@ -13,7 +13,9 @@ import com.aventstack.extentreports.Status;
 import Base.BaseClassLocal;
 import PageObjects.AlertPage;
 import PageObjects.LoginPage;
+import Utils.CSVReaderUtil;
 import Utils.ConfigReader;
+
 
 public class herokuapp_Local extends BaseClassLocal {
 
@@ -21,7 +23,7 @@ public class herokuapp_Local extends BaseClassLocal {
     ConfigReader config; 
     AlertPage alpage;
 
-    @Test(priority = 1)
+    @Test(priority = 1,dataProvider = "loginData",dataProviderClass = CSVReaderUtil.class)
     public void ValidLogin() {
         page = new LoginPage(getDriver());
         config = new ConfigReader();
