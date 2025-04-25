@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import Base.BaseClassLocal;
 
-public class LoginPage  extends BaseClassLocal{
+public class LoginPage {
     
     	   
     	    public LoginPage(WebDriver driver) {
