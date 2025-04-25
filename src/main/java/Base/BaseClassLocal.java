@@ -24,8 +24,8 @@ public class BaseClassLocal {
     private static ExtentReports extent;
 
     // Thread-safe WebDriver and ExtentTest
-    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+    protected static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    protected static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
     public WebDriver getDriver() {
         return driver.get();
