@@ -124,7 +124,7 @@ public class herokuapp_Local extends BaseClassLocal {
             assertEquals(ele2, "You entered: Mukesh Chandra Balodi");
             getTest().log(Status.PASS, "JS Prompt handled successfully with correct input");
         } catch (AssertionError ae) {
-            getTest().log(Status.FAIL, "Assertion failed for JS Prompt: " + ae.getMessage());mmmmmmmmm
+            getTest().log(Status.FAIL, "Assertion failed for JS Prompt: " + ae.getMessage());
         } catch (Exception e) {
             getTest().log(Status.FAIL, "Exception while handling JS Prompt: " + e.getMessage());
         }
