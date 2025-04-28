@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 25, 2025 03:03:55 PM</span></a>
+<a href="#"><span class="badge badge-primary">Apr 25, 2025 04:45:57 PM</span></a>
 </li>
 </ul>
 </div>
@@ -101,9 +101,9 @@
           tag="chrome"
           device="chromelatestonlocal">
           <div class="test-detail">
-            <p class="name">Test: JsAlert</p>
+            <p class="name">Test: inValidLogin</p>
             <p class="text-sm">
-              <span>3:03:55 PM</span> / <span>00:00:04:949</span>
+              <span>4:45:57 PM</span> / <span>00:00:05:201</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -111,10 +111,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Test: JsAlert</h5>
-<span class='badge badge-success'>04.25.2025 3:03:55 PM</span>
-<span class='badge badge-danger'>04.25.2025 3:04:00 PM</span>
-<span class='badge badge-default'>00:00:04:949</span>
+<h5 class="test-status text-fail">Test: inValidLogin</h5>
+<span class='badge badge-success'>04.25.2025 4:45:57 PM</span>
+<span class='badge badge-danger'>04.25.2025 4:46:02 PM</span>
+<span class='badge badge-default'>00:00:05:201</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -129,105 +129,46 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:55 PM</td>
+        <td>4:45:57 PM</td>
         <td>
-          Starting Test: JsAlert
+          Starting Test: inValidLogin
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:55 PM</td>
+        <td>4:45:57 PM</td>
         <td>
           Browser: chrome
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:55 PM</td>
+        <td>4:45:57 PM</td>
         <td>
           Browser Version: latest
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:55 PM</td>
+        <td>4:45:57 PM</td>
         <td>
           Platform: local
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:03:56 PM</td>
-        <td>
-          Navigating to JavaScript Alerts page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:04:00 PM</td>
-        <td>
-          Page loaded and window maximized
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:00 PM</td>
-        <td>
-          Clicking JS Alert
-        </td>
-      </tr>
-      <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:04:00 PM</td>
+        <td>4:46:02 PM</td>
         <td>
-          Exception while handling JS Alert: Cannot invoke "org.openqa.selenium.WebDriver.switchTo()" because "this.driver" is null
+          Test Failed: java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/inValidLogin.png' src="./screenshots/inValidLogin.png">
+    
+    </div></div>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:00 PM</td>
-        <td>
-          Clicking JS Confirm
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:04:00 PM</td>
-        <td>
-          Exception while handling JS Confirm: unexpected alert open: {Alert text : I am a JS Alert}
-  (Session info: chrome=135.0.7049.114): I am a JS Alert
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9de4c082799d5edec88bf6e1358a3655, findElement {using=xpath, value=//button[text()='Click for JS Confirm']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\enque\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62853/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9de4c082799d5edec88bf6e1358a3655
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:00 PM</td>
-        <td>
-          Clicking JS Prompt and entering text
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:04:00 PM</td>
-        <td>
-          Exception while handling JS Prompt: Cannot invoke "org.openqa.selenium.WebDriver.switchTo()" because "this.driver" is null
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:04:00 PM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>3:04:00 PM</td>
+        <td>4:46:02 PM</td>
         <td>
           Closing browser
         </td>
@@ -278,9 +219,9 @@ Session ID: 9de4c082799d5edec88bf6e1358a3655
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:03:55 PM</td>
+<td>16:45:57 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>Test: JsAlert</a>
+<a href="#" class="linked" test-id='1' id='1'>Test: inValidLogin</a>
 </td>
 </tr>
 </tbody>
@@ -327,9 +268,9 @@ Session ID: 9de4c082799d5edec88bf6e1358a3655
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:03:55 PM</td>
+<td>16:45:57 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>Test: JsAlert</a>
+<a href="#" class="linked" test-id='1' id='1'>Test: inValidLogin</a>
 </td>
 </tr>
 </tbody>
@@ -349,13 +290,13 @@ Session ID: 9de4c082799d5edec88bf6e1358a3655
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 25, 2025 03:03:55 PM</h3>
+<h3>Apr 25, 2025 04:45:57 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 25, 2025 03:04:00 PM</h3>
+<h3>Apr 25, 2025 04:46:02 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -406,10 +347,10 @@ Session ID: 9de4c082799d5edec88bf6e1358a3655
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='14%'><b>2</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='21%'><b>3</b> events failed,
-<b data-tooltip='%'>9</b> others
+<small data-tooltip='16%'><b>1</b> events failed,
+<b data-tooltip='%'>5</b> others
 </small>
 </div>
 </div>
@@ -425,7 +366,7 @@ Session ID: 9de4c082799d5edec88bf6e1358a3655
 </div></div>
 <script>
 var timeline = {
-"Test: JsAlert":4.949
+"Test: inValidLogin":5.201
 };
 </script>
 <div class="row">
@@ -486,11 +427,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 2,
-failEvents: 3,
+passEvents: 0,
+failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 9
+infoEvents: 5
 };
 </script>        </div>
       </div>
