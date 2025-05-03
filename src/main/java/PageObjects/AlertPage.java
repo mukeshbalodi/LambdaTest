@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import Base.BaseClassLocal;
 
-public class AlertPage {
+public class AlertPage extends BaseClassLocal {
 	WebDriver driver;
     public AlertPage(WebDriver driver) {
-        
+        this.driver=driver;
         PageFactory.initElements(driver, this);
     }
 

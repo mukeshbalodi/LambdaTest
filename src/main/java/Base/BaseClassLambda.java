@@ -8,13 +8,17 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.safari.SafariOptions;
 import org.testng.annotations.*;
 
+import Utils.ConfigReader;
+
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-import Utils.ConfigReader;
+
 
 public class BaseClassLambda {
 
@@ -25,9 +29,9 @@ public class BaseClassLambda {
     public void setUp(@Optional("Chrome") String browser,
                       @Optional("latest") String browserVersion,
                       @Optional("Windows 10") String platform,
-                      Method method) throws MalformedURLException {
+                      Method method) throws MalformedURLException, URISyntaxException {
 
-        ConfigReader reader = new ConfigReader();
+     ConfigReader reader = new ConfigReader();
         String username = reader.getLambdaUsername();
         String accessKey = reader.getLambdaPassword();
 
@@ -52,7 +56,7 @@ public class BaseClassLambda {
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.setCapability("LT:Options", ltOptions);
-                driver = new RemoteWebDriver(new URL(getHubURL(username, accessKey)), chromeOptions);
+                driver = new RemoteWebDriver(new URI(getHubURL(username, accessKey)).toURL(), chromeOptions);
                 break;
 
             case "firefox":

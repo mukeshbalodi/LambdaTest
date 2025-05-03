@@ -95,6 +95,7 @@ public class herokuapp_Local extends BaseClassLocal {
             String ele = getDriver().findElement(By.id("result")).getText();
             assertEquals(ele, "You successfully clicked an alert");
             getTest().log(Status.PASS, "JS Alert handled successfully and verified message");
+           
         } catch (AssertionError ae) {
             getTest().log(Status.FAIL, "Assertion failed for JS Alert: " + ae.getMessage());
         } catch (Exception e) {
