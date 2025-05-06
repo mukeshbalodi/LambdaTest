@@ -2,16 +2,16 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-03T12:38:53 IST" name="Default suite" finished-at="2025-05-03T12:39:00 IST" duration-ms="6908">
+  <suite started-at="2025-05-03T12:43:21 IST" name="Default suite" finished-at="2025-05-03T12:43:26 IST" duration-ms="4556">
     <groups>
     </groups>
-    <test started-at="2025-05-03T12:38:53 IST" name="Default test" finished-at="2025-05-03T12:39:00 IST" duration-ms="6908">
+    <test started-at="2025-05-03T12:43:21 IST" name="Default test" finished-at="2025-05-03T12:43:26 IST" duration-ms="4556">
       <class name="TestCases.herokuapp_Local">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-05-03T12:38:53 IST" name="setupReport" finished-at="2025-05-03T12:38:53 IST" duration-ms="153" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-05-03T12:43:21 IST" name="setupReport" finished-at="2025-05-03T12:43:21 IST" duration-ms="154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-05-03T12:38:53 IST" name="setup" finished-at="2025-05-03T12:38:54 IST" duration-ms="1173" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-05-03T12:43:21 IST" name="setup" finished-at="2025-05-03T12:43:22 IST" duration-ms="1100" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-05-03T12:38:54 IST" name="JsAlert" finished-at="2025-05-03T12:39:00 IST" duration-ms="5569" status="PASS">
+        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-05-03T12:43:22 IST" name="JsAlert" finished-at="2025-05-03T12:43:26 IST" duration-ms="3320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JsAlert -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-05-03T12:39:00 IST" name="teardown" finished-at="2025-05-03T12:39:00 IST" duration-ms="147" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-05-03T12:43:26 IST" name="teardown" finished-at="2025-05-03T12:43:26 IST" duration-ms="119" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-05-03T12:39:00 IST" name="generateReport" finished-at="2025-05-03T12:39:00 IST" duration-ms="195" status="PASS">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-05-03T12:43:26 IST" name="generateReport" finished-at="2025-05-03T12:43:26 IST" duration-ms="196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->

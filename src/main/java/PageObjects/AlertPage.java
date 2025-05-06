@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import Base.BaseClassLocal;
 
-public class AlertPage extends BaseClassLocal {
+public class AlertPage  {
 	WebDriver driver;
     public AlertPage(WebDriver driver) {
         this.driver=driver;
