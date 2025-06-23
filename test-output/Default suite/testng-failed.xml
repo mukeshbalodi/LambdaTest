@@ -8,8 +8,8 @@
           <include name="teardown"/>
           <include name="setup"/>
           <include name="generateReport"/>
-          <include name="inValidLogin"/>
           <include name="setupReport"/>
+          <include name="inValidLogin"/>
         </methods>
       </class> <!-- TestCases.herokuapp_Local -->
     </classes>

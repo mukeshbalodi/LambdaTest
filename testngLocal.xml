@@ -11,22 +11,22 @@
     </classes>
   </test>
 
-  <test name="EdgeTest">
+   <test name="FirefoxTest">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="browserVersion" value="latest"/>
+    <parameter name="platform" value="local"/>
+    <classes>
+      <class name="TestCases.herokuapp_Local"/>
+    </classes>
+    </test>
+
+  <test name="edgeTest">
     <parameter name="browser" value="edge"/>
     <parameter name="browserVersion" value="latest"/>
     <parameter name="platform" value="local"/>
     <classes>
       <class name="TestCases.herokuapp_Local"/>
     </classes>
-  </test>
-
-  <test name="FirefoxTest">
-    <parameter name="browser" value="firefox"/>
-    <parameter name="browserVersion" value="latest"/>
-    <parameter name="platform" value="local"/>
-    <classes>
-      <class name="TestCases.herokuapp_Local"/>
-    </classes>
-  </test>
+    </test>
 
 </suite>

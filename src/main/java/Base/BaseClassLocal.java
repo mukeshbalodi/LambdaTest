@@ -5,8 +5,12 @@ import Utils.ExtentManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeDriverService;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -17,6 +21,10 @@ import java.lang.reflect.Method;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.time.Duration;
+import org.testng.annotations.Optional; 
+
+
+
 
 public class BaseClassLocal {
 
@@ -67,20 +75,35 @@ public class BaseClassLocal {
 
             switch (browser.toLowerCase()) {
                 case "chrome":
-                    WebDriverManager.chromedriver().setup();
-                    localDriver = new ChromeDriver();
+                	 WebDriverManager.chromedriver().setup();
+                     ChromeOptions chromeOptions = new ChromeOptions();
+                   chromeOptions.addArguments("--headless");
+                     chromeOptions.addArguments("--disable-gpu");
+                    localDriver = new ChromeDriver(chromeOptions);
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
-                    localDriver = new FirefoxDriver();
+                   
+                    FirefoxOptions firefoxoptions = new FirefoxOptions();
+                    firefoxoptions.addArguments("--headless");
+                    firefoxoptions.addArguments("--disable-gpu");
+                    localDriver = new FirefoxDriver(firefoxoptions);
                     break;
                 case "edge":
                     WebDriverManager.edgedriver().setup();
-                    localDriver = new EdgeDriver();
+                    EdgeOptions edgeoptions = new EdgeOptions();
+                    edgeoptions.addArguments("--headless=new"); // headless mode
+                    edgeoptions.addArguments("--disable-gpu");
+                    edgeoptions.addArguments("window-size=1920,1080");
+                    edgeoptions.addArguments("--disable-software-rasterizer");
+                    edgeoptions.addArguments("--no-sandbox");
+                    edgeoptions.addArguments("--remote-debugging-port=9222"); // required to avoid DevToolsActivePort issue
+
+                    localDriver = new EdgeDriver(edgeoptions);
                     break;
-                case "safari":
-                    localDriver = new SafariDriver();
-                    break;
+
+
+               
                 default:
                     throw new IllegalArgumentException("Invalid browser: " + browser);
             }

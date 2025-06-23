@@ -1,1 +1,4 @@
+secrets.txt
+ignore.txt
 src/test/resources/config.properties
+src/test/resources/test-data.csv

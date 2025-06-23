@@ -1,0 +1,10 @@
+com\gurock\testrail\APIClient.class
+Utils\CSVReaderUtil.class
+com\gurock\testrail\APIException.class
+Utils\ConfigReader.class
+Utils\ExtentManager.class
+PageObjects\AlertPage.class
+Base\BaseClassLocal.class
+PageObjects\LoginPage.class
+Base\BaseClassLambda.class
+com\qa\testrailmanager\TestRailManager.class

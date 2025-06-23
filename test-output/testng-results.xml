@@ -1,17 +1,319 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-25T15:03:55 IST" name="Default suite" finished-at="2025-04-25T15:04:00 IST" duration-ms="5088">
+  <suite started-at="2025-06-23T14:42:03 IST" name="CrossBrowserSuite" finished-at="2025-06-23T14:42:53 IST" duration-ms="49704">
     <groups>
     </groups>
-    <test started-at="2025-04-25T15:03:55 IST" name="Default test" finished-at="2025-04-25T15:04:00 IST" duration-ms="5088">
+    <test started-at="2025-06-23T14:42:03 IST" name="ChromeTest" finished-at="2025-06-23T14:42:45 IST" duration-ms="41553">
       <class name="TestCases.herokuapp_Local">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-04-25T15:03:55 IST" name="setupReport" finished-at="2025-04-25T15:03:55 IST" duration-ms="162" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:03 IST" name="setup" finished-at="2025-06-23T14:42:05 IST" duration-ms="1315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-04-25T15:03:55 IST" name="setup" finished-at="2025-04-25T15:03:56 IST" duration-ms="1244" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:05 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:11 IST" duration-ms="6046" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:11 IST" name="teardown" finished-at="2025-06-23T14:42:11 IST" duration-ms="108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@1ff4931d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:11 IST" name="setup" finished-at="2025-06-23T14:42:12 IST" duration-ms="892" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:12 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:16 IST" duration-ms="4319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:16 IST" name="teardown" finished-at="2025-06-23T14:42:16 IST" duration-ms="118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@1ff4931d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:16 IST" name="setup" finished-at="2025-06-23T14:42:17 IST" duration-ms="674" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:17 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:22 IST" duration-ms="4944" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:22 IST" name="teardown" finished-at="2025-06-23T14:42:22 IST" duration-ms="128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@1ff4931d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:22 IST" name="setup" finished-at="2025-06-23T14:42:23 IST" duration-ms="674" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:23 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:28 IST" duration-ms="5016" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:28 IST" name="teardown" finished-at="2025-06-23T14:42:28 IST" duration-ms="147" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@1ff4931d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:28 IST" name="setup" finished-at="2025-06-23T14:42:29 IST" duration-ms="670" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:29 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:34 IST" duration-ms="5704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:34 IST" name="teardown" finished-at="2025-06-23T14:42:34 IST" duration-ms="122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@1ff4931d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:34 IST" name="setup" finished-at="2025-06-23T14:42:35 IST" duration-ms="688" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.inValidLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:35 IST" name="inValidLogin" finished-at="2025-06-23T14:42:40 IST" duration-ms="5041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:40 IST" name="teardown" finished-at="2025-06-23T14:42:40 IST" duration-ms="129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inValidLogin status=SUCCESS method=herokuapp_Local.inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@1ff4931d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:40 IST" name="setup" finished-at="2025-06-23T14:42:41 IST" duration-ms="709" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,26 +339,732 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-04-25T15:03:56 IST" name="JsAlert" finished-at="2025-04-25T15:04:00 IST" duration-ms="3709" status="PASS">
+        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:41 IST" name="JsAlert" finished-at="2025-06-23T14:42:45 IST" duration-ms="3936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JsAlert -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-04-25T15:04:00 IST" name="teardown" finished-at="2025-04-25T15:04:00 IST" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@1ff4931d]" started-at="2025-06-23T14:42:45 IST" name="teardown" finished-at="2025-06-23T14:42:45 IST" duration-ms="121" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=JsAlert status=SUCCESS method=herokuapp_Local.JsAlert()[pri:3, instance:TestCases.herokuapp_Local@7f0eb4b4] output={null}]]]>
+                <![CDATA[[TestResult name=JsAlert status=SUCCESS method=herokuapp_Local.JsAlert()[pri:3, instance:TestCases.herokuapp_Local@1ff4931d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:TestCases.herokuapp_Local@7f0eb4b4]" started-at="2025-04-25T15:04:00 IST" name="generateReport" finished-at="2025-04-25T15:04:00 IST" duration-ms="229" status="PASS">
+      </class> <!-- TestCases.herokuapp_Local -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2025-06-23T14:42:03 IST" name="edgeTest" finished-at="2025-06-23T14:42:51 IST" duration-ms="47353">
+      <class name="TestCases.herokuapp_Local">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:03 IST" name="setupReport" finished-at="2025-06-23T14:42:03 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:03 IST" name="setup" finished-at="2025-06-23T14:42:05 IST" duration-ms="1222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:05 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:10 IST" duration-ms="5276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:10 IST" name="teardown" finished-at="2025-06-23T14:42:11 IST" duration-ms="1282" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@38e79ae3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:11 IST" name="setup" finished-at="2025-06-23T14:42:12 IST" duration-ms="659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:12 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:17 IST" duration-ms="4917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:17 IST" name="teardown" finished-at="2025-06-23T14:42:18 IST" duration-ms="1222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@38e79ae3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:18 IST" name="setup" finished-at="2025-06-23T14:42:19 IST" duration-ms="502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:19 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:24 IST" duration-ms="4982" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:24 IST" name="teardown" finished-at="2025-06-23T14:42:25 IST" duration-ms="1210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@38e79ae3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:25 IST" name="setup" finished-at="2025-06-23T14:42:25 IST" duration-ms="482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:25 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:30 IST" duration-ms="4992" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:30 IST" name="teardown" finished-at="2025-06-23T14:42:31 IST" duration-ms="1207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@38e79ae3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:31 IST" name="setup" finished-at="2025-06-23T14:42:32 IST" duration-ms="521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:32 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:37 IST" duration-ms="5269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:37 IST" name="teardown" finished-at="2025-06-23T14:42:38 IST" duration-ms="1175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@38e79ae3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:38 IST" name="setup" finished-at="2025-06-23T14:42:39 IST" duration-ms="491" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.inValidLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:39 IST" name="inValidLogin" finished-at="2025-06-23T14:42:44 IST" duration-ms="5035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:44 IST" name="teardown" finished-at="2025-06-23T14:42:45 IST" duration-ms="1185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inValidLogin status=SUCCESS method=herokuapp_Local.inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@38e79ae3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:45 IST" name="setup" finished-at="2025-06-23T14:42:46 IST" duration-ms="456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.JsAlert()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:46 IST" name="JsAlert" finished-at="2025-06-23T14:42:50 IST" duration-ms="4024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JsAlert -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:50 IST" name="teardown" finished-at="2025-06-23T14:42:51 IST" duration-ms="1196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JsAlert status=SUCCESS method=herokuapp_Local.JsAlert()[pri:3, instance:TestCases.herokuapp_Local@38e79ae3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:TestCases.herokuapp_Local@38e79ae3]" started-at="2025-06-23T14:42:53 IST" name="generateReport" finished-at="2025-06-23T14:42:53 IST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
       </class> <!-- TestCases.herokuapp_Local -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- edgeTest -->
+    <test started-at="2025-06-23T14:42:03 IST" name="FirefoxTest" finished-at="2025-06-23T14:42:53 IST" duration-ms="49704">
+      <class name="TestCases.herokuapp_Local">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:03 IST" name="setup" finished-at="2025-06-23T14:42:06 IST" duration-ms="2388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:06 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:11 IST" duration-ms="5024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:11 IST" name="teardown" finished-at="2025-06-23T14:42:12 IST" duration-ms="874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:12 IST" name="setup" finished-at="2025-06-23T14:42:13 IST" duration-ms="1485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:13 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:18 IST" duration-ms="4954" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:18 IST" name="teardown" finished-at="2025-06-23T14:42:19 IST" duration-ms="663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:19 IST" name="setup" finished-at="2025-06-23T14:42:20 IST" duration-ms="1368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:20 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:25 IST" duration-ms="5039" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:25 IST" name="teardown" finished-at="2025-06-23T14:42:26 IST" duration-ms="578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:26 IST" name="setup" finished-at="2025-06-23T14:42:27 IST" duration-ms="1438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:27 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:32 IST" duration-ms="4979" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:32 IST" name="teardown" finished-at="2025-06-23T14:42:33 IST" duration-ms="570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:33 IST" name="setup" finished-at="2025-06-23T14:42:34 IST" duration-ms="1404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:34 IST" name="ValidLogin" data-provider="loginData" finished-at="2025-06-23T14:42:39 IST" duration-ms="5004" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:39 IST" name="teardown" finished-at="2025-06-23T14:42:40 IST" duration-ms="571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidLogin status=SUCCESS method=herokuapp_Local.ValidLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:40 IST" name="setup" finished-at="2025-06-23T14:42:41 IST" duration-ms="1651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.inValidLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:41 IST" name="inValidLogin" finished-at="2025-06-23T14:42:46 IST" duration-ms="5004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:46 IST" name="teardown" finished-at="2025-06-23T14:42:47 IST" duration-ms="550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inValidLogin status=SUCCESS method=herokuapp_Local.inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:47 IST" name="setup" finished-at="2025-06-23T14:42:48 IST" duration-ms="1363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.JsAlert()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:48 IST" name="JsAlert" finished-at="2025-06-23T14:42:53 IST" duration-ms="4197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JsAlert -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@58ea606c]" started-at="2025-06-23T14:42:53 IST" name="teardown" finished-at="2025-06-23T14:42:53 IST" duration-ms="556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JsAlert status=SUCCESS method=herokuapp_Local.JsAlert()[pri:3, instance:TestCases.herokuapp_Local@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestCases.herokuapp_Local -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- CrossBrowserSuite -->
 </testng-results>

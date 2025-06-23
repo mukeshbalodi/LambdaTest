@@ -25,9 +25,9 @@ public class herokuapp_Local extends BaseClassLocal {
   //  public static String testCaseID = "";
     @Test(priority = 1, dataProvider = "loginData", dataProviderClass = CSVReaderUtil.class)
     public void ValidLogin(String username, String password) {
-      //   testCaseID = "C18"; // Use only when not taking data from csv and seperate test case ID in testrail.
+       //  testCaseID = "C18";  Use only when not taking data from csv and seperate test case ID in testrail.
         page = new LoginPage(getDriver());
-        getDriver().get("https://the-internet.herokuapp.com/login");
+        getDriver().get("https:the-internet.herokuapp.com/login");
         getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
@@ -38,7 +38,7 @@ public class herokuapp_Local extends BaseClassLocal {
         page.clickLogin();
         getTest().log(Status.INFO, "Clicked on Login Button");
 
-        WebElement ele = getDriver().findElement(By.xpath("//*[@id=\"flash\"]"));
+        WebElement ele = getDriver().findElement(By.xpath("//div[@id='flash']"));
         try {
             Assert.assertTrue(ele.isDisplayed());
             getTest().log(Status.PASS, "Element displayed: " + ele.getText());
@@ -53,7 +53,7 @@ public class herokuapp_Local extends BaseClassLocal {
     public void inValidLogin() {
         page = new LoginPage(getDriver());
         config = new ConfigReader();
-        getDriver().get("https://the-internet.herokuapp.com/login");
+        getDriver().get("https:the-internet.herokuapp.com/login");
         getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
@@ -64,7 +64,7 @@ public class herokuapp_Local extends BaseClassLocal {
         page.clickLogin();
         getTest().log(Status.INFO, "Clicked on Login Button");
 
-        WebElement ele = getDriver().findElement(By.xpath("//i[@class='icon-2x icon-signout']"));
+        WebElement ele = getDriver().findElement(By.xpath("//div[@id='flash']"));
         try {
             Assert.assertTrue(ele.isDisplayed());
             getTest().log(Status.PASS, "Element displayed : " + ele.getText());
@@ -79,7 +79,7 @@ public class herokuapp_Local extends BaseClassLocal {
         try {
             alpage = new AlertPage(getDriver());
             config = new ConfigReader();
-            getDriver().get("https://the-internet.herokuapp.com/javascript_alerts");
+            getDriver().get("https:the-internet.herokuapp.com/javascript_alerts");
             getDriver().manage().window().maximize();
             getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             getTest().log(Status.PASS, "Page loaded and window maximized");
@@ -87,7 +87,7 @@ public class herokuapp_Local extends BaseClassLocal {
             getTest().log(Status.FAIL, "Failed to load or maximize page: " + e.getMessage());
         }
 
-        // Handle JS Alert
+    //     Handle JS Alert
         try {
             getTest().log(Status.INFO, "Clicking JS Alert");
             alpage.clickJsAlert();
@@ -95,13 +95,14 @@ public class herokuapp_Local extends BaseClassLocal {
             String ele = getDriver().findElement(By.id("result")).getText();
             assertEquals(ele, "You successfully clicked an alert");
             getTest().log(Status.PASS, "JS Alert handled successfully and verified message");
+           
         } catch (AssertionError ae) {
             getTest().log(Status.FAIL, "Assertion failed for JS Alert: " + ae.getMessage());
         } catch (Exception e) {
             getTest().log(Status.FAIL, "Exception while handling JS Alert: " + e.getMessage());
         }
 
-        // Handle JS Confirm
+   //      Handle JS Confirm
         try {
             getTest().log(Status.INFO, "Clicking JS Confirm");
             alpage.clickJsConfirm();
@@ -113,9 +114,9 @@ public class herokuapp_Local extends BaseClassLocal {
             getTest().log(Status.FAIL, "Assertion failed for JS Confirm: " + ae.getMessage());
         } catch (Exception e) {
             getTest().log(Status.FAIL, "Exception while handling JS Confirm: " + e.getMessage());
-        }
+        } 
 
-        // Handle JS Prompt
+//         Handle JS Prompt
         try {
             getTest().log(Status.INFO, "Clicking JS Prompt and entering text");
             alpage.clickJsPrompt();
