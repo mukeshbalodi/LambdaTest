@@ -12,6 +12,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -90,19 +91,14 @@ public class BaseClassLocal {
                     localDriver = new FirefoxDriver(firefoxoptions);
                     break;
                 case "edge":
-                    WebDriverManager.edgedriver().setup();
-                    EdgeOptions edgeoptions = new EdgeOptions();
-                    edgeoptions.addArguments("--headless=new"); // headless mode
+                	 WebDriverManager.edgedriver().setup();
+                     EdgeOptions edgeoptions = new EdgeOptions();
+                     edgeoptions.addArguments("--headless");
                     edgeoptions.addArguments("--disable-gpu");
-                    edgeoptions.addArguments("window-size=1920,1080");
-                    edgeoptions.addArguments("--disable-software-rasterizer");
-                    edgeoptions.addArguments("--no-sandbox");
-                    edgeoptions.addArguments("--remote-debugging-port=9222"); // required to avoid DevToolsActivePort issue
-
                     localDriver = new EdgeDriver(edgeoptions);
                     break;
 
-
+               
                
                 default:
                     throw new IllegalArgumentException("Invalid browser: " + browser);
@@ -128,7 +124,7 @@ public class BaseClassLocal {
         if (extentTest != null) {
             if (result.getStatus() == ITestResult.FAILURE) {
                 String screenshotPath = takeScreenshot(result.getName());
-                String relativePath = "./screenshots/" + result.getName() + ".png";
+                String relativePath = "screenshots/" + result.getName() + ".png";
 
                 if (screenshotPath != null) {
                     extentTest.fail("Test Failed: " + result.getThrowable(),
@@ -166,7 +162,7 @@ public class BaseClassLocal {
         WebDriver localDriver = driver.get();
         try {
             File src = ((TakesScreenshot) localDriver).getScreenshotAs(OutputType.FILE);
-            String path = System.getProperty("user.dir") + "/test-output/screenshots/" + testName + ".png";
+            String path = System.getProperty("user.dir") + "/target/surefire-reports/screenshots/" + testName + ".png";
             File destination = new File(path);
             Files.createDirectories(destination.getParentFile().toPath());
             Files.copy(src.toPath(), destination.toPath(), StandardCopyOption.REPLACE_EXISTING);

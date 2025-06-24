@@ -1,52 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="18" parallel="tests" name="Failed suite [CrossBrowserSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="18" parallel="tests" name="ChromeTest(failed)">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="browserVersion" value="latest"/>
-    <parameter name="platform" value="local"/>
-    <classes>
-      <class name="TestCases.herokuapp_Local">
-        <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="generateReport"/>
-          <include name="ValidLogin"/>
-          <include name="setupReport"/>
-        </methods>
-      </class> <!-- TestCases.herokuapp_Local -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
-  <test thread-count="18" parallel="tests" name="FirefoxTest(failed)">
+<suite parallel="tests" name="Failed suite [CrossBrowserSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Firefox_Win10(failed)">
     <parameter name="browser" value="Firefox"/>
     <parameter name="browserVersion" value="latest"/>
-    <parameter name="platform" value="local"/>
+    <parameter name="platform" value="Windows 10"/>
     <classes>
-      <class name="TestCases.herokuapp_Local">
+      <class name="TestCases.herokuapp_Lambda">
         <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="generateReport"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="inValidLogin"/>
           <include name="ValidLogin"/>
-          <include name="setupReport"/>
+          <include name="JsAlert"/>
         </methods>
-      </class> <!-- TestCases.herokuapp_Local -->
+      </class> <!-- TestCases.herokuapp_Lambda -->
     </classes>
-  </test> <!-- FirefoxTest(failed) -->
-  <test thread-count="18" parallel="tests" name="edgeTest(failed)">
-    <parameter name="browser" value="edge"/>
+  </test> <!-- Firefox_Win10(failed) -->
+  <test thread-count="5" parallel="tests" name="Chrome_Win11(failed)">
+    <parameter name="browser" value="Chrome"/>
     <parameter name="browserVersion" value="latest"/>
-    <parameter name="platform" value="local"/>
+    <parameter name="platform" value="Windows 11"/>
     <classes>
-      <class name="TestCases.herokuapp_Local">
+      <class name="TestCases.herokuapp_Lambda">
         <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="generateReport"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="inValidLogin"/>
           <include name="ValidLogin"/>
-          <include name="setupReport"/>
+          <include name="JsAlert"/>
         </methods>
-      </class> <!-- TestCases.herokuapp_Local -->
+      </class> <!-- TestCases.herokuapp_Lambda -->
     </classes>
-  </test> <!-- edgeTest(failed) -->
+  </test> <!-- Chrome_Win11(failed) -->
+  <test thread-count="5" parallel="tests" name="Safari_Mac14(failed)">
+    <parameter name="browser" value="Safari"/>
+    <parameter name="browserVersion" value="latest"/>
+    <parameter name="platform" value="macOS 14"/>
+    <classes>
+      <class name="TestCases.herokuapp_Lambda">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="inValidLogin"/>
+          <include name="ValidLogin"/>
+          <include name="JsAlert"/>
+        </methods>
+      </class> <!-- TestCases.herokuapp_Lambda -->
+    </classes>
+  </test> <!-- Safari_Mac14(failed) -->
+  <test thread-count="5" parallel="tests" name="Edge_Win7(failed)">
+    <parameter name="browser" value="Edge"/>
+    <parameter name="browserVersion" value="latest"/>
+    <parameter name="platform" value="Windows 7"/>
+    <classes>
+      <class name="TestCases.herokuapp_Lambda">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="inValidLogin"/>
+          <include name="ValidLogin"/>
+          <include name="JsAlert"/>
+        </methods>
+      </class> <!-- TestCases.herokuapp_Lambda -->
+    </classes>
+  </test> <!-- Edge_Win7(failed) -->
 </suite> <!-- Failed suite [CrossBrowserSuite] -->
