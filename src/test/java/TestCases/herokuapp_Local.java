@@ -24,7 +24,7 @@ public class herokuapp_Local extends BaseClassLocal {
     AlertPage alpage;
   //  public static String testCaseID = "";
     @Test(priority = 1, dataProvider = "loginData", dataProviderClass = CSVReaderUtil.class)
-    public void ValidLogin(String username, String password) {
+    public void TestLogin(String username, String password) {
        //  testCaseID = "C18";  Use only when not taking data from csv and seperate test case ID in testrail.
         page = new LoginPage(getDriver());
         getDriver().get("https:the-internet.herokuapp.com/login");
@@ -32,9 +32,9 @@ public class herokuapp_Local extends BaseClassLocal {
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         page.enterUsername(username); // from CSV
-        getTest().log(Status.INFO, "Username entered: " + username);
+        getTest().log(Status.INFO, "Username entered in the username field ");
         page.enterPassword(password); // from CSV
-        getTest().log(Status.INFO, "Password entered");
+        getTest().log(Status.INFO, "Password entered in the password field");
         page.clickLogin();
         getTest().log(Status.INFO, "Clicked on Login Button");
 
