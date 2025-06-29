@@ -145,7 +145,7 @@ public class herokuapp_Local extends BaseClassLocal {
     String actualTitle=	getDriver().getTitle();
     String expectedTitle = "Mukesh balodi - Google Search";
     if(actualTitle.equals(expectedTitle)) {
-    	getTest().pass(" Test pass title Matched");
+    	getTest().pass(" Test pass title Matched title is : "+getDriver().getTitle());
     }
     else {
     	getTest().fail("Test Failed title did't matched with expected title");
