@@ -120,7 +120,7 @@ public class herokuapp_Local extends BaseClassLocal {
 
 //         Handle JS Prompt
         try {
-            getTest().log(Status.INFO, "Clicking JS Prompt and entering text");
+            getTest().log(Status.INFO, "Clicking JS Prompt and entering text in it");
             alpage.clickJsPrompt();
             alpage.enterTextInPrompt("Mukesh Chandra Balodi");
             String ele2 = getDriver().findElement(By.id("result")).getText();
