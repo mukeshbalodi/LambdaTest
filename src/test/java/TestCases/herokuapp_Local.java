@@ -5,7 +5,9 @@ import static org.testng.Assert.assertEquals;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -129,5 +131,26 @@ public class herokuapp_Local extends BaseClassLocal {
         } catch (Exception e) {
             getTest().log(Status.FAIL, "Exception while handling JS Prompt: " + e.getMessage());
         }
+    }
+    
+    @Test(priority =4 )
+    public void searchGoogle() {
+    	getDriver().get("https://www.google.com/");
+    	getTest().info("URL Entered");
+    	getDriver().findElement(By.name("q")).sendKeys("Mukesh balodi");
+    	getTest().info("text entered into search bar");
+    	Actions action = new Actions(getDriver());
+    	action.keyDown(Keys.ENTER);
+    	getTest().info("text entered into search bar");
+    String actualTitle=	getDriver().getTitle();
+    String expectedTitle = "Mukesh balodi - Google Search";
+    if(actualTitle.equals(expectedTitle)) {
+    	getTest().pass(" Test pass title Matched");
+    }
+    else {
+    	getTest().fail("Test Failed title did't matched");
+    	}
+    }
+
     }
 }

@@ -1,1003 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="12" failed="0" skipped="6">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-25T14:56:36 IST" name="CrossBrowserSuite" finished-at="2025-06-25T14:57:21 IST" duration-ms="45328">
+  <suite started-at="2025-06-29T11:30:26 IST" name="CrossBrowserSuite" finished-at="2025-06-29T11:31:51 IST" duration-ms="85570">
     <groups>
     </groups>
-    <test started-at="2025-06-25T14:56:36 IST" name="edgeTest" finished-at="2025-06-25T14:56:46 IST" duration-ms="9787">
+    <test started-at="2025-06-29T11:30:26 IST" name="ChromeTest" finished-at="2025-06-29T11:31:14 IST" duration-ms="48200">
       <class name="TestCases.herokuapp_Local">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:36 IST" name="setupReport" finished-at="2025-06-25T14:56:36 IST" duration-ms="166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:36 IST" name="setup" finished-at="2025-06-25T14:56:39 IST" duration-ms="2787" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[latest]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Browser setup failed for: edge]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
-at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
-  (session not created: DevToolsActivePort file doesn't exist)
-  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
-Host info: host: 'NISHKARSH', ip: '192.168.1.113'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--headless, --disable-gpu], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
-... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:39 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-25T14:56:39 IST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tomsmith]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SuperSecretPassword!]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Browser setup failed for: edge]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
-at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
-  (session not created: DevToolsActivePort file doesn't exist)
-  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
-Host info: host: 'NISHKARSH', ip: '192.168.1.113'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--headless, --disable-gpu], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
-... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:39 IST" name="teardown" finished-at="2025-06-25T14:56:39 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestLogin status=SKIP method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:39 IST" name="setup" finished-at="2025-06-25T14:56:40 IST" duration-ms="1867" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[latest]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Browser setup failed for: edge]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
-at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
-  (session not created: DevToolsActivePort file doesn't exist)
-  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
-Host info: host: 'NISHKARSH', ip: '192.168.1.113'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--headless, --disable-gpu], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
-... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:40 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-25T14:56:40 IST" duration-ms="1" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tomsmith]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SuperSecretPassword!]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Browser setup failed for: edge]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
-at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
-  (session not created: DevToolsActivePort file doesn't exist)
-  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
-Host info: host: 'NISHKARSH', ip: '192.168.1.113'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--headless, --disable-gpu], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
-... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:40 IST" name="teardown" finished-at="2025-06-25T14:56:40 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestLogin status=SKIP method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:40 IST" name="setup" finished-at="2025-06-25T14:56:42 IST" duration-ms="1338" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[latest]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Browser setup failed for: edge]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
-at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
-  (session not created: DevToolsActivePort file doesn't exist)
-  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
-Host info: host: 'NISHKARSH', ip: '192.168.1.113'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--headless, --disable-gpu], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
-... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:42 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-25T14:56:42 IST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tomsmith]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SuperSecretPassword!]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Browser setup failed for: edge]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
-at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
-  (session not created: DevToolsActivePort file doesn't exist)
-  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
-Host info: host: 'NISHKARSH', ip: '192.168.1.113'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--headless, --disable-gpu], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
-... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:42 IST" name="teardown" finished-at="2025-06-25T14:56:42 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestLogin status=SKIP method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:42 IST" name="setup" finished-at="2025-06-25T14:56:43 IST" duration-ms="1250" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[latest]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Browser setup failed for: edge]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
-at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
-  (session not created: DevToolsActivePort file doesn't exist)
-  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
-Host info: host: 'NISHKARSH', ip: '192.168.1.113'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--headless, --disable-gpu], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
-... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:43 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-25T14:56:43 IST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[username]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Browser setup failed for: edge]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
-at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
-  (session not created: DevToolsActivePort file doesn't exist)
-  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
-Host info: host: 'NISHKARSH', ip: '192.168.1.113'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--headless, --disable-gpu], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
-... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:43 IST" name="teardown" finished-at="2025-06-25T14:56:43 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestLogin status=SKIP method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:43 IST" name="setup" finished-at="2025-06-25T14:56:44 IST" duration-ms="1241" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[latest]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[public void TestCases.herokuapp_Local.inValidLogin()]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Browser setup failed for: edge]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
-at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
-  (session not created: DevToolsActivePort file doesn't exist)
-  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
-Host info: host: 'NISHKARSH', ip: '192.168.1.113'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--headless, --disable-gpu], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
-... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:44 IST" name="inValidLogin" finished-at="2025-06-25T14:56:44 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Browser setup failed for: edge]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
-at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
-  (session not created: DevToolsActivePort file doesn't exist)
-  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
-Host info: host: 'NISHKARSH', ip: '192.168.1.113'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--headless, --disable-gpu], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
-... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inValidLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:44 IST" name="teardown" finished-at="2025-06-25T14:56:44 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=inValidLogin status=SKIP method=herokuapp_Local.inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@42a48628] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:44 IST" name="setup" finished-at="2025-06-25T14:56:46 IST" duration-ms="1249" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[latest]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[public void TestCases.herokuapp_Local.JsAlert()]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Browser setup failed for: edge]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
-at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
-  (session not created: DevToolsActivePort file doesn't exist)
-  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
-Host info: host: 'NISHKARSH', ip: '192.168.1.113'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--headless, --disable-gpu], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
-... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:46 IST" name="JsAlert" finished-at="2025-06-25T14:56:46 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Browser setup failed for: edge]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
-at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
-  (session not created: DevToolsActivePort file doesn't exist)
-  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.) 
-Host info: host: 'NISHKARSH', ip: '192.168.1.113'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--headless, --disable-gpu], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
-at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
-... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JsAlert -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:56:46 IST" name="teardown" finished-at="2025-06-25T14:56:46 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=JsAlert status=SKIP method=herokuapp_Local.JsAlert()[pri:3, instance:TestCases.herokuapp_Local@42a48628] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-25T14:57:21 IST" name="generateReport" finished-at="2025-06-25T14:57:21 IST" duration-ms="243" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateReport -->
-      </class> <!-- TestCases.herokuapp_Local -->
-    </test> <!-- edgeTest -->
-    <test started-at="2025-06-25T14:56:36 IST" name="ChromeTest" finished-at="2025-06-25T14:57:12 IST" duration-ms="35976">
-      <class name="TestCases.herokuapp_Local">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:56:36 IST" name="setup" finished-at="2025-06-25T14:56:39 IST" duration-ms="2800" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:30:26 IST" name="setup" finished-at="2025-06-29T11:30:28 IST" duration-ms="2819" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1023,7 +33,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:56:39 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-25T14:56:44 IST" duration-ms="5133" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:30:28 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T11:30:36 IST" duration-ms="8020" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1039,7 +49,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:56:44 IST" name="teardown" finished-at="2025-06-25T14:56:44 IST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:30:36 IST" name="teardown" finished-at="2025-06-29T11:30:37 IST" duration-ms="572" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1050,7 +60,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:56:44 IST" name="setup" finished-at="2025-06-25T14:56:44 IST" duration-ms="658" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:30:37 IST" name="setup" finished-at="2025-06-29T11:30:38 IST" duration-ms="1106" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1076,7 +86,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:56:44 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-25T14:56:49 IST" duration-ms="4708" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:30:38 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T11:30:44 IST" duration-ms="5424" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1092,7 +102,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:56:49 IST" name="teardown" finished-at="2025-06-25T14:56:49 IST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:30:44 IST" name="teardown" finished-at="2025-06-29T11:30:44 IST" duration-ms="196" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1103,7 +113,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:56:49 IST" name="setup" finished-at="2025-06-25T14:56:50 IST" duration-ms="741" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:30:44 IST" name="setup" finished-at="2025-06-29T11:30:45 IST" duration-ms="1037" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1129,7 +139,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:56:50 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-25T14:56:55 IST" duration-ms="5025" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:30:45 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T11:30:53 IST" duration-ms="7762" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1145,7 +155,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:56:55 IST" name="teardown" finished-at="2025-06-25T14:56:55 IST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:30:53 IST" name="teardown" finished-at="2025-06-29T11:30:53 IST" duration-ms="355" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1156,7 +166,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:56:55 IST" name="setup" finished-at="2025-06-25T14:56:56 IST" duration-ms="698" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:30:53 IST" name="setup" finished-at="2025-06-29T11:30:54 IST" duration-ms="1270" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1182,7 +192,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:56:56 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-25T14:57:01 IST" duration-ms="5023" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:30:54 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T11:31:02 IST" duration-ms="7771" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1198,7 +208,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:57:01 IST" name="teardown" finished-at="2025-06-25T14:57:01 IST" duration-ms="229" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:31:02 IST" name="teardown" finished-at="2025-06-29T11:31:02 IST" duration-ms="312" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1209,7 +219,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:57:01 IST" name="setup" finished-at="2025-06-25T14:57:02 IST" duration-ms="718" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:31:02 IST" name="setup" finished-at="2025-06-29T11:31:03 IST" duration-ms="1058" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1235,11 +245,11 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:57:02 IST" name="inValidLogin" finished-at="2025-06-25T14:57:07 IST" duration-ms="4992" status="PASS">
+        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:31:03 IST" name="inValidLogin" finished-at="2025-06-29T11:31:08 IST" duration-ms="5000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inValidLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:57:07 IST" name="teardown" finished-at="2025-06-25T14:57:07 IST" duration-ms="101" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:31:08 IST" name="teardown" finished-at="2025-06-29T11:31:08 IST" duration-ms="155" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1250,7 +260,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:57:07 IST" name="setup" finished-at="2025-06-25T14:57:08 IST" duration-ms="638" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:31:08 IST" name="setup" finished-at="2025-06-29T11:31:10 IST" duration-ms="1018" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1276,11 +286,11 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:57:08 IST" name="JsAlert" finished-at="2025-06-25T14:57:12 IST" duration-ms="3992" status="PASS">
+        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:31:10 IST" name="JsAlert" finished-at="2025-06-29T11:31:14 IST" duration-ms="4075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JsAlert -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-25T14:57:12 IST" name="teardown" finished-at="2025-06-25T14:57:12 IST" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7b9a4292]" started-at="2025-06-29T11:31:14 IST" name="teardown" finished-at="2025-06-29T11:31:14 IST" duration-ms="152" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1293,13 +303,17 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
         </test-method> <!-- teardown -->
       </class> <!-- TestCases.herokuapp_Local -->
     </test> <!-- ChromeTest -->
-    <test started-at="2025-06-25T14:56:36 IST" name="FirefoxTest" finished-at="2025-06-25T14:57:21 IST" duration-ms="45328">
+    <test started-at="2025-06-29T11:30:26 IST" name="edgeTest" finished-at="2025-06-29T11:31:24 IST" duration-ms="58343">
       <class name="TestCases.herokuapp_Local">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:56:36 IST" name="setup" finished-at="2025-06-25T14:56:40 IST" duration-ms="3741" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:30:25 IST" name="setupReport" finished-at="2025-06-29T11:30:26 IST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:30:26 IST" name="setup" finished-at="2025-06-29T11:30:28 IST" duration-ms="2816" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="1">
@@ -1321,7 +335,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:56:40 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-25T14:56:45 IST" duration-ms="5200" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:30:28 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T11:30:40 IST" duration-ms="11528" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1337,22 +351,22 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:56:45 IST" name="teardown" finished-at="2025-06-25T14:56:45 IST" duration-ms="637" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:30:40 IST" name="teardown" finished-at="2025-06-29T11:30:40 IST" duration-ms="479" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e] output={null}]]]>
+                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:56:45 IST" name="setup" finished-at="2025-06-25T14:56:47 IST" duration-ms="1955" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:30:40 IST" name="setup" finished-at="2025-06-29T11:30:42 IST" duration-ms="1449" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="1">
@@ -1374,7 +388,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:56:47 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-25T14:56:53 IST" duration-ms="5308" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:30:42 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T11:30:47 IST" duration-ms="4941" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1390,22 +404,22 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:56:53 IST" name="teardown" finished-at="2025-06-25T14:56:53 IST" duration-ms="577" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:30:47 IST" name="teardown" finished-at="2025-06-29T11:30:47 IST" duration-ms="274" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e] output={null}]]]>
+                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:56:53 IST" name="setup" finished-at="2025-06-25T14:56:55 IST" duration-ms="1502" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:30:47 IST" name="setup" finished-at="2025-06-29T11:30:48 IST" duration-ms="1302" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="1">
@@ -1427,7 +441,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:56:55 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-25T14:57:00 IST" duration-ms="4954" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:30:48 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T11:30:53 IST" duration-ms="4732" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1443,22 +457,22 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:57:00 IST" name="teardown" finished-at="2025-06-25T14:57:00 IST" duration-ms="602" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:30:53 IST" name="teardown" finished-at="2025-06-29T11:30:55 IST" duration-ms="1494" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e] output={null}]]]>
+                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:57:00 IST" name="setup" finished-at="2025-06-25T14:57:02 IST" duration-ms="1682" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:30:55 IST" name="setup" finished-at="2025-06-29T11:30:56 IST" duration-ms="1277" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="1">
@@ -1480,7 +494,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:57:02 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-25T14:57:07 IST" duration-ms="4866" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:30:56 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T11:31:05 IST" duration-ms="8600" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1496,7 +510,150 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:57:07 IST" name="teardown" finished-at="2025-06-25T14:57:07 IST" duration-ms="686" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:31:05 IST" name="teardown" finished-at="2025-06-29T11:31:05 IST" duration-ms="382" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@42a48628] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:31:05 IST" name="setup" finished-at="2025-06-29T11:31:06 IST" duration-ms="1445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.inValidLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:31:06 IST" name="inValidLogin" finished-at="2025-06-29T11:31:12 IST" duration-ms="5412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inValidLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:31:12 IST" name="teardown" finished-at="2025-06-29T11:31:12 IST" duration-ms="196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inValidLogin status=SUCCESS method=herokuapp_Local.inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@42a48628] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:31:12 IST" name="setup" finished-at="2025-06-29T11:31:13 IST" duration-ms="1235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.JsAlert()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:31:13 IST" name="JsAlert" finished-at="2025-06-29T11:31:24 IST" duration-ms="10447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JsAlert -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:31:24 IST" name="teardown" finished-at="2025-06-29T11:31:24 IST" duration-ms="261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=JsAlert status=SUCCESS method=herokuapp_Local.JsAlert()[pri:3, instance:TestCases.herokuapp_Local@42a48628] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:TestCases.herokuapp_Local@42a48628]" started-at="2025-06-29T11:31:51 IST" name="generateReport" finished-at="2025-06-29T11:31:52 IST" duration-ms="1244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- TestCases.herokuapp_Local -->
+    </test> <!-- edgeTest -->
+    <test started-at="2025-06-29T11:30:26 IST" name="FirefoxTest" finished-at="2025-06-29T11:31:51 IST" duration-ms="85570">
+      <class name="TestCases.herokuapp_Local">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:30:26 IST" name="setup" finished-at="2025-06-29T11:30:31 IST" duration-ms="5128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:30:31 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T11:30:36 IST" duration-ms="5194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:30:36 IST" name="teardown" finished-at="2025-06-29T11:30:40 IST" duration-ms="3584" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1507,7 +664,166 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:57:07 IST" name="setup" finished-at="2025-06-25T14:57:09 IST" duration-ms="1495" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:30:40 IST" name="setup" finished-at="2025-06-29T11:30:44 IST" duration-ms="4035" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:30:44 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T11:30:49 IST" duration-ms="5134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:30:49 IST" name="teardown" finished-at="2025-06-29T11:30:51 IST" duration-ms="2510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:30:51 IST" name="setup" finished-at="2025-06-29T11:30:55 IST" duration-ms="3526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:30:55 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T11:31:00 IST" duration-ms="5333" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:31:00 IST" name="teardown" finished-at="2025-06-29T11:31:03 IST" duration-ms="2920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:31:03 IST" name="setup" finished-at="2025-06-29T11:31:07 IST" duration-ms="4162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:31:07 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T11:31:21 IST" duration-ms="13509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:31:21 IST" name="teardown" finished-at="2025-06-29T11:31:24 IST" duration-ms="2877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@7d8995e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:31:24 IST" name="setup" finished-at="2025-06-29T11:31:26 IST" duration-ms="2640" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1533,11 +849,11 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:57:09 IST" name="inValidLogin" finished-at="2025-06-25T14:57:14 IST" duration-ms="5165" status="PASS">
+        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:31:26 IST" name="inValidLogin" finished-at="2025-06-29T11:31:36 IST" duration-ms="9797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inValidLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:57:14 IST" name="teardown" finished-at="2025-06-25T14:57:15 IST" duration-ms="564" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:31:36 IST" name="teardown" finished-at="2025-06-29T11:31:38 IST" duration-ms="2491" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1548,7 +864,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:57:15 IST" name="setup" finished-at="2025-06-25T14:57:16 IST" duration-ms="1385" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:31:38 IST" name="setup" finished-at="2025-06-29T11:31:41 IST" duration-ms="2839" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1574,11 +890,11 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:98)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:57:16 IST" name="JsAlert" finished-at="2025-06-25T14:57:20 IST" duration-ms="4397" status="PASS">
+        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:31:41 IST" name="JsAlert" finished-at="2025-06-29T11:31:49 IST" duration-ms="7350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JsAlert -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-25T14:57:20 IST" name="teardown" finished-at="2025-06-25T14:57:21 IST" duration-ms="570" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@7d8995e]" started-at="2025-06-29T11:31:49 IST" name="teardown" finished-at="2025-06-29T11:31:51 IST" duration-ms="2450" status="PASS">
           <params>
             <param index="0">
               <value>
