@@ -141,7 +141,7 @@ public class herokuapp_Local extends BaseClassLocal {
     	getTest().info("text entered into search bar Mukesh balodi");
     	Actions action = new Actions(getDriver());
     	action.keyDown(Keys.ENTER);
-    	getTest().info("text entered into search bar");
+    	getTest().info("text entered into search bar as Mukesh balodi");
     String actualTitle=	getDriver().getTitle();
     String expectedTitle = "Mukesh balodi - Google Search";
     if(actualTitle.equals(expectedTitle)) {
