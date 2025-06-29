@@ -148,7 +148,7 @@ public class herokuapp_Local extends BaseClassLocal {
     	getTest().pass(" Test pass title Matched");
     }
     else {
-    	getTest().fail("Test Failed title did't matched");
+    	getTest().fail("Test Failed title did't matched with expected title");
     	}
     }
 
