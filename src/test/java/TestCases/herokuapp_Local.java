@@ -138,7 +138,7 @@ public class herokuapp_Local extends BaseClassLocal {
     	getDriver().get("https://www.google.com/");
     	getTest().info("URL Entered");
     	getDriver().findElement(By.name("q")).sendKeys("Mukesh balodi");
-    	getTest().info("text entered into search bar");
+    	getTest().info("text entered into search bar Mukesh balodi");
     	Actions action = new Actions(getDriver());
     	action.keyDown(Keys.ENTER);
     	getTest().info("text entered into search bar");
