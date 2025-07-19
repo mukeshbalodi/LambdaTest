@@ -1,70 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="21" passed="15" failed="0" skipped="6">
+<testng-results ignored="0" total="21" passed="14" failed="0" skipped="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-29T12:52:30 IST" name="CrossBrowserSuite" finished-at="2025-06-29T12:53:32 IST" duration-ms="61513">
+  <suite started-at="2025-07-19T20:32:57 IST" name="CrossBrowserSuite" finished-at="2025-07-19T20:34:02 IST" duration-ms="64877">
     <groups>
     </groups>
-    <test started-at="2025-06-29T12:52:30 IST" name="FirefoxTest" finished-at="2025-06-29T12:53:11 IST" duration-ms="40767">
+    <test started-at="2025-07-19T20:32:57 IST" name="edgeTest" finished-at="2025-07-19T20:33:05 IST" duration-ms="7532">
       <class name="TestCases.herokuapp_Local">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:52:31 IST" name="setup" finished-at="2025-06-29T12:52:38 IST" duration-ms="7850" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[latest]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[local]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:32:57 IST" name="setupReport" finished-at="2025-07-19T20:32:57 IST" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:52:38 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T12:52:44 IST" duration-ms="5827" status="PASS">
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:32:58 IST" name="setup" finished-at="2025-07-19T20:33:00 IST" duration-ms="2018" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tomsmith]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SuperSecretPassword!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:52:44 IST" name="teardown" finished-at="2025-06-29T12:52:45 IST" duration-ms="1103" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:52:45 IST" name="setup" finished-at="2025-06-29T12:52:48 IST" duration-ms="2331" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="1">
@@ -85,10 +36,10 @@
           </params>
           <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Browser setup failed for: Firefox]]>
+              <![CDATA[Browser setup failed for: edge]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: Firefox
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
 at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -114,35 +65,55 @@ at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'MUKESH', ip: '192.168.1.8'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {args: [--headless, --disable-gpu], prefs: {remote.active-protocols: 3}}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
 ... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:52:48 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T12:52:48 IST" duration-ms="0" status="SKIP">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:00 IST" name="TestLogin" data-provider="loginData" finished-at="2025-07-19T20:33:00 IST" duration-ms="2" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -157,10 +128,10 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           </params>
           <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Browser setup failed for: Firefox]]>
+              <![CDATA[Browser setup failed for: edge]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: Firefox
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
 at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -186,50 +157,70 @@ at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'MUKESH', ip: '192.168.1.8'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {args: [--headless, --disable-gpu], prefs: {remote.active-protocols: 3}}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
 ... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:52:48 IST" name="teardown" finished-at="2025-06-29T12:52:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:00 IST" name="teardown" finished-at="2025-07-19T20:33:00 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestLogin status=SKIP method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
+                <![CDATA[[TestResult name=TestLogin status=SKIP method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:52:48 IST" name="setup" finished-at="2025-06-29T12:52:53 IST" duration-ms="5312" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:00 IST" name="setup" finished-at="2025-07-19T20:33:00 IST" duration-ms="776" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="1">
@@ -248,28 +239,12 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:52:53 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T12:52:53 IST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tomsmith]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SuperSecretPassword!]]>
-              </value>
-            </param>
-          </params>
           <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Browser setup failed for: Firefox]]>
+              <![CDATA[Browser setup failed for: edge]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: Firefox
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
 at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -295,50 +270,162 @@ at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'MUKESH', ip: '192.168.1.8'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {args: [--headless, --disable-gpu], prefs: {remote.active-protocols: 3}}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
 ... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:00 IST" name="TestLogin" data-provider="loginData" finished-at="2025-07-19T20:33:00 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Browser setup failed for: edge]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
+at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:52:53 IST" name="teardown" finished-at="2025-06-29T12:52:55 IST" duration-ms="2006" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:00 IST" name="teardown" finished-at="2025-07-19T20:33:00 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestLogin status=SKIP method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
+                <![CDATA[[TestResult name=TestLogin status=SKIP method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:52:55 IST" name="setup" finished-at="2025-06-29T12:52:59 IST" duration-ms="3824" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:00 IST" name="setup" finished-at="2025-07-19T20:33:01 IST" duration-ms="820" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="1">
@@ -357,10 +444,291 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
               </value>
             </param>
           </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Browser setup failed for: edge]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
+at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:52:59 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T12:52:59 IST" duration-ms="0" status="SKIP">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:01 IST" name="TestLogin" data-provider="loginData" finished-at="2025-07-19T20:33:01 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Browser setup failed for: edge]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
+at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:01 IST" name="teardown" finished-at="2025-07-19T20:33:01 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestLogin status=SKIP method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:01 IST" name="setup" finished-at="2025-07-19T20:33:03 IST" duration-ms="1383" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Browser setup failed for: edge]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
+at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:03 IST" name="TestLogin" data-provider="loginData" finished-at="2025-07-19T20:33:03 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -375,10 +743,10 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           </params>
           <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Browser setup failed for: Firefox]]>
+              <![CDATA[Browser setup failed for: edge]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: Firefox
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
 at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -404,50 +772,70 @@ at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'MUKESH', ip: '192.168.1.8'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {args: [--headless, --disable-gpu], prefs: {remote.active-protocols: 3}}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
 ... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:52:59 IST" name="teardown" finished-at="2025-06-29T12:53:00 IST" duration-ms="1032" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:03 IST" name="teardown" finished-at="2025-07-19T20:33:03 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestLogin status=SKIP method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
+                <![CDATA[[TestResult name=TestLogin status=SKIP method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:53:00 IST" name="setup" finished-at="2025-06-29T12:53:02 IST" duration-ms="1831" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:03 IST" name="setup" finished-at="2025-07-19T20:33:03 IST" duration-ms="695" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="1">
@@ -466,16 +854,12 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:53:02 IST" name="inValidLogin" finished-at="2025-06-29T12:53:02 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Browser setup failed for: Firefox]]>
+              <![CDATA[Browser setup failed for: edge]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: Firefox
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
 at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -501,50 +885,150 @@ at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'MUKESH', ip: '192.168.1.8'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {args: [--headless, --disable-gpu], prefs: {remote.active-protocols: 3}}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
 ... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:03 IST" name="inValidLogin" finished-at="2025-07-19T20:33:03 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Browser setup failed for: edge]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
+at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inValidLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:53:02 IST" name="teardown" finished-at="2025-06-29T12:53:03 IST" duration-ms="891" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:03 IST" name="teardown" finished-at="2025-07-19T20:33:03 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=inValidLogin status=SKIP method=herokuapp_Local.inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
+                <![CDATA[[TestResult name=inValidLogin status=SKIP method=herokuapp_Local.inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:53:03 IST" name="setup" finished-at="2025-06-29T12:53:05 IST" duration-ms="2576" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:03 IST" name="setup" finished-at="2025-07-19T20:33:04 IST" duration-ms="957" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="1">
@@ -563,16 +1047,12 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:53:05 IST" name="JsAlert" finished-at="2025-06-29T12:53:05 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Browser setup failed for: Firefox]]>
+              <![CDATA[Browser setup failed for: edge]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: Firefox
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
 at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -598,50 +1078,150 @@ at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'MUKESH', ip: '192.168.1.8'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {args: [--headless, --disable-gpu], prefs: {remote.active-protocols: 3}}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
 ... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:04 IST" name="JsAlert" finished-at="2025-07-19T20:33:04 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Browser setup failed for: edge]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
+at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JsAlert -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:53:05 IST" name="teardown" finished-at="2025-06-29T12:53:07 IST" duration-ms="1525" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:04 IST" name="teardown" finished-at="2025-07-19T20:33:04 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=JsAlert status=SKIP method=herokuapp_Local.JsAlert()[pri:3, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
+                <![CDATA[[TestResult name=JsAlert status=SKIP method=herokuapp_Local.JsAlert()[pri:3, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:53:07 IST" name="setup" finished-at="2025-06-29T12:53:10 IST" duration-ms="3148" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:04 IST" name="setup" finished-at="2025-07-19T20:33:05 IST" duration-ms="597" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[edge]]>
               </value>
             </param>
             <param index="1">
@@ -660,16 +1240,12 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchGoogle()[pri:4, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:53:10 IST" name="searchGoogle" finished-at="2025-06-29T12:53:10 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Browser setup failed for: Firefox]]>
+              <![CDATA[Browser setup failed for: edge]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Browser setup failed for: Firefox
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
 at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -695,50 +1271,154 @@ at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'MUKESH', ip: '192.168.1.8'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {args: [--headless, --disable-gpu], prefs: {remote.active-protocols: 3}}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
 ... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchGoogle()[pri:4, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:05 IST" name="searchGoogle" finished-at="2025-07-19T20:33:05 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Browser setup failed for: edge]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
+at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+... 33 more
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchGoogle -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-06-29T12:53:10 IST" name="teardown" finished-at="2025-06-29T12:53:11 IST" duration-ms="1420" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:33:05 IST" name="teardown" finished-at="2025-07-19T20:33:05 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchGoogle status=SKIP method=herokuapp_Local.searchGoogle()[pri:4, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
+                <![CDATA[[TestResult name=searchGoogle status=SKIP method=herokuapp_Local.searchGoogle()[pri:4, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-07-19T20:34:02 IST" name="generateReport" finished-at="2025-07-19T20:34:03 IST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
       </class> <!-- TestCases.herokuapp_Local -->
-    </test> <!-- FirefoxTest -->
-    <test started-at="2025-06-29T12:52:30 IST" name="ChromeTest" finished-at="2025-06-29T12:53:29 IST" duration-ms="58306">
+    </test> <!-- edgeTest -->
+    <test started-at="2025-07-19T20:32:57 IST" name="ChromeTest" finished-at="2025-07-19T20:33:51 IST" duration-ms="53996">
       <class name="TestCases.herokuapp_Local">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:52:31 IST" name="setup" finished-at="2025-06-29T12:52:35 IST" duration-ms="4661" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:32:58 IST" name="setup" finished-at="2025-07-19T20:33:03 IST" duration-ms="4956" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -764,7 +1444,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:52:35 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T12:52:40 IST" duration-ms="4815" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:03 IST" name="TestLogin" data-provider="loginData" finished-at="2025-07-19T20:33:14 IST" duration-ms="11232" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -780,7 +1460,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:52:40 IST" name="teardown" finished-at="2025-06-29T12:52:40 IST" duration-ms="205" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:14 IST" name="teardown" finished-at="2025-07-19T20:33:14 IST" duration-ms="188" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -791,7 +1471,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:52:40 IST" name="setup" finished-at="2025-06-29T12:52:43 IST" duration-ms="2641" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:14 IST" name="setup" finished-at="2025-07-19T20:33:15 IST" duration-ms="1113" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -817,7 +1497,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:52:43 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T12:52:51 IST" duration-ms="8099" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:15 IST" name="TestLogin" data-provider="loginData" finished-at="2025-07-19T20:33:20 IST" duration-ms="4839" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -833,7 +1513,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:52:51 IST" name="teardown" finished-at="2025-06-29T12:52:56 IST" duration-ms="4592" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:20 IST" name="teardown" finished-at="2025-07-19T20:33:20 IST" duration-ms="167" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -844,7 +1524,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:52:56 IST" name="setup" finished-at="2025-06-29T12:52:58 IST" duration-ms="2055" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:20 IST" name="setup" finished-at="2025-07-19T20:33:21 IST" duration-ms="983" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -870,7 +1550,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:52:58 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T12:53:04 IST" duration-ms="6204" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:21 IST" name="TestLogin" data-provider="loginData" finished-at="2025-07-19T20:33:27 IST" duration-ms="5673" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -886,7 +1566,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:53:04 IST" name="teardown" finished-at="2025-06-29T12:53:04 IST" duration-ms="147" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:27 IST" name="teardown" finished-at="2025-07-19T20:33:27 IST" duration-ms="155" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -897,7 +1577,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:53:04 IST" name="setup" finished-at="2025-06-29T12:53:05 IST" duration-ms="1531" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:27 IST" name="setup" finished-at="2025-07-19T20:33:28 IST" duration-ms="928" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -923,7 +1603,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:53:05 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T12:53:10 IST" duration-ms="4441" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:28 IST" name="TestLogin" data-provider="loginData" finished-at="2025-07-19T20:33:39 IST" duration-ms="10893" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -939,7 +1619,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:53:10 IST" name="teardown" finished-at="2025-06-29T12:53:10 IST" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:39 IST" name="teardown" finished-at="2025-07-19T20:33:39 IST" duration-ms="233" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -950,7 +1630,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:53:10 IST" name="setup" finished-at="2025-06-29T12:53:11 IST" duration-ms="857" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:39 IST" name="setup" finished-at="2025-07-19T20:33:40 IST" duration-ms="1137" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -976,11 +1656,11 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:53:11 IST" name="inValidLogin" finished-at="2025-06-29T12:53:21 IST" duration-ms="9953" status="PASS">
+        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:40 IST" name="inValidLogin" finished-at="2025-07-19T20:33:44 IST" duration-ms="4025" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inValidLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:53:21 IST" name="teardown" finished-at="2025-06-29T12:53:21 IST" duration-ms="128" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:44 IST" name="teardown" finished-at="2025-07-19T20:33:44 IST" duration-ms="179" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -991,7 +1671,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:53:21 IST" name="setup" finished-at="2025-06-29T12:53:22 IST" duration-ms="859" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:44 IST" name="setup" finished-at="2025-07-19T20:33:45 IST" duration-ms="1069" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1017,11 +1697,11 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:53:22 IST" name="JsAlert" finished-at="2025-06-29T12:53:26 IST" duration-ms="4151" status="PASS">
+        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:45 IST" name="JsAlert" finished-at="2025-07-19T20:33:49 IST" duration-ms="3263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JsAlert -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:53:26 IST" name="teardown" finished-at="2025-06-29T12:53:26 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:49 IST" name="teardown" finished-at="2025-07-19T20:33:49 IST" duration-ms="110" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1032,7 +1712,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:53:26 IST" name="setup" finished-at="2025-06-29T12:53:27 IST" duration-ms="778" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:49 IST" name="setup" finished-at="2025-07-19T20:33:50 IST" duration-ms="801" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1058,11 +1738,11 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchGoogle()[pri:4, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:53:27 IST" name="searchGoogle" finished-at="2025-06-29T12:53:29 IST" duration-ms="1757" status="PASS">
+        <test-method signature="searchGoogle()[pri:4, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:50 IST" name="searchGoogle" finished-at="2025-07-19T20:33:51 IST" duration-ms="1809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchGoogle -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-06-29T12:53:29 IST" name="teardown" finished-at="2025-06-29T12:53:29 IST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@4a94ee4]" started-at="2025-07-19T20:33:51 IST" name="teardown" finished-at="2025-07-19T20:33:51 IST" duration-ms="122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1075,17 +1755,13 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
         </test-method> <!-- teardown -->
       </class> <!-- TestCases.herokuapp_Local -->
     </test> <!-- ChromeTest -->
-    <test started-at="2025-06-29T12:52:30 IST" name="edgeTest" finished-at="2025-06-29T12:53:32 IST" duration-ms="61513">
+    <test started-at="2025-07-19T20:32:57 IST" name="FirefoxTest" finished-at="2025-07-19T20:34:02 IST" duration-ms="64877">
       <class name="TestCases.herokuapp_Local">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:52:30 IST" name="setupReport" finished-at="2025-06-29T12:52:30 IST" duration-ms="244" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:52:31 IST" name="setup" finished-at="2025-06-29T12:52:37 IST" duration-ms="6733" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:32:58 IST" name="setup" finished-at="2025-07-19T20:33:04 IST" duration-ms="6721" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[Firefox]]>
               </value>
             </param>
             <param index="1">
@@ -1107,7 +1783,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:52:37 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T12:52:43 IST" duration-ms="5550" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:04 IST" name="TestLogin" data-provider="loginData" finished-at="2025-07-19T20:33:10 IST" duration-ms="5463" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1123,22 +1799,22 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:52:43 IST" name="teardown" finished-at="2025-06-29T12:52:43 IST" duration-ms="404" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:10 IST" name="teardown" finished-at="2025-07-19T20:33:12 IST" duration-ms="2531" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
+                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:52:43 IST" name="setup" finished-at="2025-06-29T12:52:44 IST" duration-ms="1134" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:12 IST" name="setup" finished-at="2025-07-19T20:33:16 IST" duration-ms="3539" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[Firefox]]>
               </value>
             </param>
             <param index="1">
@@ -1160,7 +1836,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:52:44 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T12:52:53 IST" duration-ms="8560" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:16 IST" name="TestLogin" data-provider="loginData" finished-at="2025-07-19T20:33:21 IST" duration-ms="5100" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1176,22 +1852,22 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:52:53 IST" name="teardown" finished-at="2025-06-29T12:52:56 IST" duration-ms="2628" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:21 IST" name="teardown" finished-at="2025-07-19T20:33:23 IST" duration-ms="2341" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
+                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:52:56 IST" name="setup" finished-at="2025-06-29T12:52:58 IST" duration-ms="2088" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:23 IST" name="setup" finished-at="2025-07-19T20:33:26 IST" duration-ms="2692" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[Firefox]]>
               </value>
             </param>
             <param index="1">
@@ -1213,7 +1889,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:52:58 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T12:53:07 IST" duration-ms="8922" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:26 IST" name="TestLogin" data-provider="loginData" finished-at="2025-07-19T20:33:33 IST" duration-ms="7307" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1229,22 +1905,22 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:07 IST" name="teardown" finished-at="2025-06-29T12:53:07 IST" duration-ms="221" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:33 IST" name="teardown" finished-at="2025-07-19T20:33:35 IST" duration-ms="2232" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
+                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:07 IST" name="setup" finished-at="2025-06-29T12:53:08 IST" duration-ms="1120" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:35 IST" name="setup" finished-at="2025-07-19T20:33:38 IST" duration-ms="2685" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[Firefox]]>
               </value>
             </param>
             <param index="1">
@@ -1266,7 +1942,7 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:08 IST" name="TestLogin" data-provider="loginData" finished-at="2025-06-29T12:53:14 IST" duration-ms="6287" status="PASS">
+        <test-method signature="TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:38 IST" name="TestLogin" data-provider="loginData" finished-at="2025-07-19T20:33:42 IST" duration-ms="4238" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1282,22 +1958,22 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:14 IST" name="teardown" finished-at="2025-06-29T12:53:14 IST" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:42 IST" name="teardown" finished-at="2025-07-19T20:33:43 IST" duration-ms="1045" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
+                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=herokuapp_Local.TestLogin(java.lang.String,java.lang.String)[pri:1, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:14 IST" name="setup" finished-at="2025-06-29T12:53:15 IST" duration-ms="870" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:43 IST" name="setup" finished-at="2025-07-19T20:33:46 IST" duration-ms="2675" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[Firefox]]>
               </value>
             </param>
             <param index="1">
@@ -1319,26 +1995,26 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:15 IST" name="inValidLogin" finished-at="2025-06-29T12:53:23 IST" duration-ms="7507" status="PASS">
+        <test-method signature="inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:46 IST" name="inValidLogin" finished-at="2025-07-19T20:33:50 IST" duration-ms="4067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inValidLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:23 IST" name="teardown" finished-at="2025-06-29T12:53:23 IST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:50 IST" name="teardown" finished-at="2025-07-19T20:33:51 IST" duration-ms="1008" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=inValidLogin status=SUCCESS method=herokuapp_Local.inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
+                <![CDATA[[TestResult name=inValidLogin status=SUCCESS method=herokuapp_Local.inValidLogin()[pri:2, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:23 IST" name="setup" finished-at="2025-06-29T12:53:24 IST" duration-ms="854" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:51 IST" name="setup" finished-at="2025-07-19T20:33:54 IST" duration-ms="2434" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[Firefox]]>
               </value>
             </param>
             <param index="1">
@@ -1360,26 +2036,26 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:24 IST" name="JsAlert" finished-at="2025-06-29T12:53:29 IST" duration-ms="5556" status="PASS">
+        <test-method signature="JsAlert()[pri:3, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:54 IST" name="JsAlert" finished-at="2025-07-19T20:33:57 IST" duration-ms="3491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JsAlert -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:29 IST" name="teardown" finished-at="2025-06-29T12:53:29 IST" duration-ms="132" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:57 IST" name="teardown" finished-at="2025-07-19T20:33:58 IST" duration-ms="1005" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=JsAlert status=SUCCESS method=herokuapp_Local.JsAlert()[pri:3, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
+                <![CDATA[[TestResult name=JsAlert status=SUCCESS method=herokuapp_Local.JsAlert()[pri:3, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:29 IST" name="setup" finished-at="2025-06-29T12:53:30 IST" duration-ms="798" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:33:58 IST" name="setup" finished-at="2025-07-19T20:34:00 IST" duration-ms="1929" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[Firefox]]>
               </value>
             </param>
             <param index="1">
@@ -1401,26 +2077,22 @@ at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchGoogle()[pri:4, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:30 IST" name="searchGoogle" finished-at="2025-06-29T12:53:32 IST" duration-ms="1695" status="PASS">
+        <test-method signature="searchGoogle()[pri:4, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:34:00 IST" name="searchGoogle" finished-at="2025-07-19T20:34:01 IST" duration-ms="1147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchGoogle -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:32 IST" name="teardown" finished-at="2025-06-29T12:53:32 IST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:TestCases.herokuapp_Local@130d63be]" started-at="2025-07-19T20:34:01 IST" name="teardown" finished-at="2025-07-19T20:34:02 IST" duration-ms="1108" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchGoogle status=SUCCESS method=herokuapp_Local.searchGoogle()[pri:4, instance:TestCases.herokuapp_Local@293a5bf6] output={null}]]]>
+                <![CDATA[[TestResult name=searchGoogle status=SUCCESS method=herokuapp_Local.searchGoogle()[pri:4, instance:TestCases.herokuapp_Local@130d63be] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:TestCases.herokuapp_Local@293a5bf6]" started-at="2025-06-29T12:53:32 IST" name="generateReport" finished-at="2025-06-29T12:53:32 IST" duration-ms="312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateReport -->
       </class> <!-- TestCases.herokuapp_Local -->
-    </test> <!-- edgeTest -->
+    </test> <!-- FirefoxTest -->
   </suite> <!-- CrossBrowserSuite -->
 </testng-results>

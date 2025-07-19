@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="62.602" tests="22" errors="0" skipped="6" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="66.332" tests="28" errors="0" skipped="7" failures="7">
   <properties>
     <property name="java.specification.version" value="21"/>
-    <property name="webdriver.chrome.driver" value="C:\Users\mukes\.cache\selenium\chromedriver\win64\138.0.7204.49\chromedriver.exe"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\mukes\.cache\selenium\chromedriver\win64\138.0.7204.157\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.class.path" value="C:\Users\mukes\eclipse-workspace\LambdaTest\target\test-classes;C:\Users\mukes\eclipse-workspace\LambdaTest\target\classes;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-java\4.28.1\selenium-java-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-api\4.28.1\selenium-api-4.28.1.jar;C:\Users\mukes\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.28.1\selenium-chrome-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.28.1\selenium-chromium-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.28.1\selenium-manager-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v130\4.28.1\selenium-devtools-v130-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.28.1\selenium-devtools-v131-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.28.1\selenium-devtools-v132-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.28.1\selenium-devtools-v85-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.28.1\selenium-edge-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.28.1\selenium-firefox-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-http\4.28.1\selenium-http-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.28.1\selenium-ie-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.28.1\selenium-remote-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\mukes\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\mukes\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\mukes\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\mukes\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\mukes\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\mukes\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\mukes\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-os\4.28.1\selenium-os-4.28.1.jar;C:\Users\mukes\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.28.1\selenium-safari-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-support\4.28.1\selenium-support-4.28.1.jar;C:\Users\mukes\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\mukes\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\mukes\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\mukes\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\mukes\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\mukes\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\mukes\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\mukes\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\mukes\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\mukes\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\mukes\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\mukes\.m2\repository\io\github\bonigarcia\webdrivermanager\6.1.0\webdrivermanager-6.1.0.jar;C:\Users\mukes\.m2\repository\com\github\docker-java\docker-java\3.5.0\docker-java-3.5.0.jar;C:\Users\mukes\.m2\repository\com\github\docker-java\docker-java-core\3.5.0\docker-java-core-3.5.0.jar;C:\Users\mukes\.m2\repository\com\github\docker-java\docker-java-api\3.5.0\docker-java-api-3.5.0.jar;C:\Users\mukes\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\mukes\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\mukes\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\mukes\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\mukes\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.5.0\docker-java-transport-httpclient5-3.5.0.jar;C:\Users\mukes\.m2\repository\com\github\docker-java\docker-java-transport\3.5.0\docker-java-transport-3.5.0.jar;C:\Users\mukes\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\mukes\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\mukes\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\mukes\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\mukes\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\mukes\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\mukes\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\mukes\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\mukes\.m2\repository\net\java\dev\jna\jna-platform\5.13.0\jna-platform-5.13.0.jar;C:\Users\mukes\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\mukes\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\mukes\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\mukes\.m2\repository\com\opencsv\opencsv\5.7.1\opencsv-5.7.1.jar;C:\Users\mukes\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\mukes\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\mukes\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mukes\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\mukes\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.33.0\selenium-devtools-v137-4.33.0.jar;C:\Users\mukes\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-json\4.33.0\selenium-json-4.33.0.jar;"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\mukes\AppData\Local\Temp\surefire11939648527527957253\surefirebooter-20250629125229914_3.jar C:\Users\mukes\AppData\Local\Temp\surefire11939648527527957253 2025-06-29T12-52-29_766-jvmRun1 surefire-20250629125229914_1tmp surefire_0-20250629125229914_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\mukes\AppData\Local\Temp\surefire7188700631742623570\surefirebooter-20250719203256274_3.jar C:\Users\mukes\AppData\Local\Temp\surefire7188700631742623570 2025-07-19T20-32-55_518-jvmRun1 surefire-20250719203256274_1tmp surefire_0-20250719203256274_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\mukes\eclipse-workspace\LambdaTest\target\test-classes;C:\Users\mukes\eclipse-workspace\LambdaTest\target\classes;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-java\4.28.1\selenium-java-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-api\4.28.1\selenium-api-4.28.1.jar;C:\Users\mukes\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.28.1\selenium-chrome-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.28.1\selenium-chromium-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.28.1\selenium-manager-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v130\4.28.1\selenium-devtools-v130-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.28.1\selenium-devtools-v131-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.28.1\selenium-devtools-v132-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.28.1\selenium-devtools-v85-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.28.1\selenium-edge-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.28.1\selenium-firefox-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-http\4.28.1\selenium-http-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.28.1\selenium-ie-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.28.1\selenium-remote-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\mukes\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\mukes\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\mukes\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\mukes\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\mukes\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\mukes\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\mukes\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\mukes\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-os\4.28.1\selenium-os-4.28.1.jar;C:\Users\mukes\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.28.1\selenium-safari-driver-4.28.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-support\4.28.1\selenium-support-4.28.1.jar;C:\Users\mukes\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\mukes\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\mukes\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\mukes\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\mukes\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\mukes\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\mukes\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\mukes\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\mukes\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\mukes\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\mukes\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\mukes\.m2\repository\io\github\bonigarcia\webdrivermanager\6.1.0\webdrivermanager-6.1.0.jar;C:\Users\mukes\.m2\repository\com\github\docker-java\docker-java\3.5.0\docker-java-3.5.0.jar;C:\Users\mukes\.m2\repository\com\github\docker-java\docker-java-core\3.5.0\docker-java-core-3.5.0.jar;C:\Users\mukes\.m2\repository\com\github\docker-java\docker-java-api\3.5.0\docker-java-api-3.5.0.jar;C:\Users\mukes\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\mukes\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\mukes\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\mukes\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\mukes\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.5.0\docker-java-transport-httpclient5-3.5.0.jar;C:\Users\mukes\.m2\repository\com\github\docker-java\docker-java-transport\3.5.0\docker-java-transport-3.5.0.jar;C:\Users\mukes\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\mukes\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\mukes\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\mukes\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\mukes\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\mukes\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\mukes\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\mukes\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\mukes\.m2\repository\net\java\dev\jna\jna-platform\5.13.0\jna-platform-5.13.0.jar;C:\Users\mukes\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\mukes\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\mukes\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\mukes\.m2\repository\com\opencsv\opencsv\5.7.1\opencsv-5.7.1.jar;C:\Users\mukes\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\mukes\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\mukes\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mukes\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\mukes\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.33.0\selenium-devtools-v137-4.33.0.jar;C:\Users\mukes\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\mukes\.m2\repository\org\seleniumhq\selenium\selenium-json\4.33.0\selenium-json-4.33.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,11 +31,10 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\mukes\AppData\Local\Temp\surefire11939648527527957253\surefirebooter-20250629125229914_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mukes\AppData\Local\Temp\surefire7188700631742623570\surefirebooter-20250719203256274_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.6+8-LTS-188"/>
-    <property name="webdriver.edge.driver" value="C:\Users\mukes\.cache\selenium\msedgedriver\win64\138.0.3351.55\msedgedriver.exe"/>
     <property name="user.name" value="mukes"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
@@ -53,7 +52,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/mukes/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858/jre/bin/server;C:/Users/mukes/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Rockwell Software\RSCommon;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\mukes\AppData\Local\Programs\Python\Python311;C:\Users\mukes\AppData\Local\Programs\Python\Python311\Scripts;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files (x86)\Common Files\Rockwell\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Program Files\php-8.3.6-Win32-vs16-x64;C:\Users\mukes\AppData\Local\Android\Sdk\tools\bin;C:\Users\mukes\AppData\Local\Android\Sdk\tools;C:\Users\mukes\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\node_modules\npm\bin;C:\Program Files\apache-maven-3.9.10\bin;C:\Users\mukes\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\mukes\AppData\Local\Programs\Python\Python312\;C:\Users\mukes\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\mukes\Downloads\eCommerceSite-PHP\eCommerceSite-PHP;C:\Users\mukes\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\mukes\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mukes\OneDrive\Desktop;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-21/bin;C:\Program Files\apache-maven-3.9.10/bin;C:\Program Files\Java\jdk-21/bin;C:\Program Files\apache-maven-3.9.10/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Rockwell Software\RSCommon;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\mukes\AppData\Local\Programs\Python\Python311;C:\Users\mukes\AppData\Local\Programs\Python\Python311\Scripts;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files (x86)\Common Files\Rockwell\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Program Files\php-8.3.6-Win32-vs16-x64;C:\Users\mukes\AppData\Local\Android\Sdk\tools\bin;C:\Users\mukes\AppData\Local\Android\Sdk\tools;C:\Users\mukes\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\node_modules\npm\bin;C:\Program Files\apache-maven-3.9.10\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\mukes\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\mukes\AppData\Local\Programs\Python\Python312\;C:\Users\mukes\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\mukes\Downloads\eCommerceSite-PHP\eCommerceSite-PHP;C:\Users\mukes\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\mukes\AppData\Local\Programs\Microsoft VS Code\bin;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -61,37 +60,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](1)" classname="TestCases.herokuapp_Local" time="1.631">
-    <system-out><![CDATA[=== Starting setup for: chrome ===
-=== Starting setup for: Firefox ===
-=== Starting setup for: edge ===
-]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Jun 29, 2025 12:52:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-Jun 29, 2025 12:52:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-Jun 29, 2025 12:52:38 PM org.openqa.selenium.firefox.FirefoxDriver <init>
-WARNING: CDP support for Firefox is deprecated and will be removed in future versions. Please switch to WebDriver BiDi.
-]]></system-err>
-  </testcase>
-  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](1)" classname="TestCases.herokuapp_Local" time="4.44">
-    <system-out><![CDATA[Closed browser: ChromeDriver: chrome on windows (null)
-=== Starting setup for: chrome ===
-]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 12:52:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-]]></system-err>
-  </testcase>
-  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](1)" classname="TestCases.herokuapp_Local" time="1.352">
-    <system-out><![CDATA[Closed browser: EdgeDriver: MicrosoftEdge on windows (null)
-=== Starting setup for: edge ===
-]]></system-out>
-  </testcase>
-  <testcase name="setup[Firefox, latest, local, public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)](0)" classname="TestCases.herokuapp_Local" time="3.351">
-    <failure message="Browser setup failed for: Firefox" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Browser setup failed for: Firefox
+  <testcase name="setup[edge, latest, local, public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)](0)" classname="TestCases.herokuapp_Local" time="3.088">
+    <failure message="Browser setup failed for: edge" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
 	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -117,55 +87,64 @@ WARNING: Unable to find an exact match for CDP version 138, returning the closes
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'MUKESH', ip: '192.168.1.8'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {args: [--headless, --disable-gpu], prefs: {remote.active-protocols: 3}}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-	at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
 	... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
 ]]></failure>
-    <system-out><![CDATA[Closed browser: FirefoxDriver: firefox on windows (null)
+    <system-out><![CDATA[=== Starting setup for: edge ===
+=== Starting setup for: chrome ===
 === Starting setup for: Firefox ===
 ]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 12:52:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'MUKESH', ip: '192.168.1.8'
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {args: [--headless, --disable-gpu], prefs: {remote.active-protocols: 3}}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-	at Base.BaseClassLocal.setup(BaseClassLocal.java:91)
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -190,133 +169,996 @@ Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: tru
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
 ]]></system-err>
   </testcase>
-  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](2)" classname="TestCases.herokuapp_Local" time="0.0">
-    <skipped message="Browser setup failed for: Firefox"/>
-  </testcase>
-  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](2)" classname="TestCases.herokuapp_Local" time="3.248">
-    <system-out><![CDATA[=== Starting setup for: Firefox ===
+  <testcase name="setup[edge, latest, local, public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)](0)" classname="TestCases.herokuapp_Local" time="1.074">
+    <failure message="Browser setup failed for: edge" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+	... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
+]]></failure>
+    <system-out><![CDATA[=== Starting setup for: edge ===
 ]]></system-out>
-  </testcase>
-  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](2)" classname="TestCases.herokuapp_Local" time="5.208">
-    <system-err><![CDATA[Jun 29, 2025 12:52:53 PM org.openqa.selenium.firefox.FirefoxDriver <init>
-WARNING: CDP support for Firefox is deprecated and will be removed in future versions. Please switch to WebDriver BiDi.
+    <system-err><![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
 ]]></system-err>
   </testcase>
-  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](3)" classname="TestCases.herokuapp_Local" time="0.0">
-    <skipped message="Browser setup failed for: Firefox"/>
+  <testcase name="setup[edge, latest, local, public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)](0)" classname="TestCases.herokuapp_Local" time="0.57">
+    <failure message="Browser setup failed for: edge" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+	... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
+]]></failure>
+    <system-out><![CDATA[=== Starting setup for: edge ===
+]]></system-out>
+    <system-err><![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
+]]></system-err>
   </testcase>
-  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](3)" classname="TestCases.herokuapp_Local" time="2.122">
+  <testcase name="setup[edge, latest, local, public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)](0)" classname="TestCases.herokuapp_Local" time="0.195">
+    <failure message="Browser setup failed for: edge" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+	... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
+]]></failure>
+    <system-out><![CDATA[=== Starting setup for: edge ===
+]]></system-out>
+    <system-err><![CDATA[Jul 19, 2025 8:33:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
+]]></system-err>
+  </testcase>
+  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](1)" classname="TestCases.herokuapp_Local" time="0.0">
+    <skipped message="Browser setup failed for: edge"/>
+  </testcase>
+  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](1)" classname="TestCases.herokuapp_Local" time="4.751"/>
+  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](1)" classname="TestCases.herokuapp_Local" time="8.759">
     <system-out><![CDATA[Closed browser: FirefoxDriver: firefox on windows (null)
 === Starting setup for: Firefox ===
 ]]></system-out>
   </testcase>
-  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](3)" classname="TestCases.herokuapp_Local" time="1.069">
-    <system-err><![CDATA[Jun 29, 2025 12:53:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](2)" classname="TestCases.herokuapp_Local" time="0.0">
+    <skipped message="Browser setup failed for: edge"/>
+  </testcase>
+  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](2)" classname="TestCases.herokuapp_Local" time="4.073">
+    <system-out><![CDATA[Closed browser: ChromeDriver: chrome on windows (null)
+=== Starting setup for: chrome ===
+]]></system-out>
+    <system-err><![CDATA[Jul 19, 2025 8:33:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+Jul 19, 2025 8:33:16 PM org.openqa.selenium.firefox.FirefoxDriver <init>
+WARNING: CDP support for Firefox is deprecated and will be removed in future versions. Please switch to WebDriver BiDi.
+]]></system-err>
+  </testcase>
+  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](2)" classname="TestCases.herokuapp_Local" time="5.099">
+    <system-out><![CDATA[Closed browser: ChromeDriver: chrome on windows (null)
+=== Starting setup for: chrome ===
+]]></system-out>
+  </testcase>
+  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](3)" classname="TestCases.herokuapp_Local" time="0.0">
+    <skipped message="Browser setup failed for: edge"/>
+  </testcase>
+  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](3)" classname="TestCases.herokuapp_Local" time="0.764">
+    <system-out><![CDATA[Closed browser: FirefoxDriver: firefox on windows (null)
+=== Starting setup for: Firefox ===
+]]></system-out>
+    <system-err><![CDATA[Jul 19, 2025 8:33:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+Jul 19, 2025 8:33:26 PM org.openqa.selenium.firefox.FirefoxDriver <init>
+WARNING: CDP support for Firefox is deprecated and will be removed in future versions. Please switch to WebDriver BiDi.
+]]></system-err>
+  </testcase>
+  <testcase name="TestLogin[tomsmith, SuperSecretPassword!](3)" classname="TestCases.herokuapp_Local" time="5.457">
+    <system-out><![CDATA[Closed browser: ChromeDriver: chrome on windows (null)
+=== Starting setup for: chrome ===
+]]></system-out>
+    <system-err><![CDATA[Jul 19, 2025 8:33:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
   <testcase name="TestLogin[username, password](4)" classname="TestCases.herokuapp_Local" time="0.0">
-    <skipped message="Browser setup failed for: Firefox"/>
+    <skipped message="Browser setup failed for: edge"/>
+  </testcase>
+  <testcase name="TestLogin[username, password](4)" classname="TestCases.herokuapp_Local" time="0.517">
     <system-out><![CDATA[Closed browser: FirefoxDriver: firefox on windows (null)
 === Starting setup for: Firefox ===
-Closed browser: EdgeDriver: MicrosoftEdge on windows (null)
-=== Starting setup for: edge ===
-Closed browser: ChromeDriver: chrome on windows (null)
-=== Starting setup for: chrome ===
 ]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 12:52:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-Jun 29, 2025 12:52:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-Jun 29, 2025 12:52:59 PM org.openqa.selenium.firefox.FirefoxDriver <init>
+    <system-err><![CDATA[Jul 19, 2025 8:33:38 PM org.openqa.selenium.firefox.FirefoxDriver <init>
 WARNING: CDP support for Firefox is deprecated and will be removed in future versions. Please switch to WebDriver BiDi.
 ]]></system-err>
   </testcase>
-  <testcase name="TestLogin[username, password](4)" classname="TestCases.herokuapp_Local" time="0.104"/>
-  <testcase name="TestLogin[username, password](4)" classname="TestCases.herokuapp_Local" time="3.246">
+  <testcase name="TestLogin[username, password](4)" classname="TestCases.herokuapp_Local" time="2.348">
     <system-out><![CDATA[Closed browser: ChromeDriver: chrome on windows (null)
 === Starting setup for: chrome ===
-Closed browser: FirefoxDriver: firefox on windows (null)
 ]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 12:53:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 19, 2025 8:33:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="setup[edge, latest, local, public void TestCases.herokuapp_Local.inValidLogin()](0)" classname="TestCases.herokuapp_Local" time="0.685">
+    <failure message="Browser setup failed for: edge" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+	... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
+]]></failure>
+    <system-out><![CDATA[=== Starting setup for: edge ===
+]]></system-out>
+    <system-err><![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
 ]]></system-err>
   </testcase>
   <testcase name="inValidLogin" classname="TestCases.herokuapp_Local" time="0.0">
-    <skipped message="Browser setup failed for: Firefox"/>
+    <skipped message="Browser setup failed for: edge"/>
+  </testcase>
+  <testcase name="inValidLogin" classname="TestCases.herokuapp_Local" time="4.026">
     <system-out><![CDATA[Closed browser: FirefoxDriver: firefox on windows (null)
 === Starting setup for: Firefox ===
 ]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 12:53:02 PM org.openqa.selenium.firefox.FirefoxDriver <init>
-WARNING: CDP support for Firefox is deprecated and will be removed in future versions. Please switch to WebDriver BiDi.
-]]></system-err>
   </testcase>
-  <testcase name="inValidLogin" classname="TestCases.herokuapp_Local" time="5.705">
-    <system-out><![CDATA[Closed browser: EdgeDriver: MicrosoftEdge on windows (null)
-=== Starting setup for: edge ===
-]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 12:53:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-]]></system-err>
-  </testcase>
-  <testcase name="inValidLogin" classname="TestCases.herokuapp_Local" time="0.813">
+  <testcase name="inValidLogin" classname="TestCases.herokuapp_Local" time="0.688">
     <system-out><![CDATA[Closed browser: ChromeDriver: chrome on windows (null)
 === Starting setup for: chrome ===
 ]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 12:53:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 19, 2025 8:33:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="setup[edge, latest, local, public void TestCases.herokuapp_Local.JsAlert()](0)" classname="TestCases.herokuapp_Local" time="0.086">
+    <failure message="Browser setup failed for: edge" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+	... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
+]]></failure>
+    <system-out><![CDATA[=== Starting setup for: edge ===
+]]></system-out>
+    <system-err><![CDATA[Jul 19, 2025 8:33:04 PM org.openqa.selenium.firefox.FirefoxDriver <init>
+WARNING: CDP support for Firefox is deprecated and will be removed in future versions. Please switch to WebDriver BiDi.
+io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
 ]]></system-err>
   </testcase>
   <testcase name="JsAlert" classname="TestCases.herokuapp_Local" time="0.0">
-    <skipped message="Browser setup failed for: Firefox"/>
+    <skipped message="Browser setup failed for: edge"/>
+  </testcase>
+  <testcase name="JsAlert" classname="TestCases.herokuapp_Local" time="2.467">
     <system-out><![CDATA[Closed browser: ChromeDriver: chrome on windows (null)
 === Starting setup for: chrome ===
 ]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 12:53:05 PM org.openqa.selenium.firefox.FirefoxDriver <init>
+    <system-err><![CDATA[Jul 19, 2025 8:33:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+Jul 19, 2025 8:33:46 PM org.openqa.selenium.firefox.FirefoxDriver <init>
 WARNING: CDP support for Firefox is deprecated and will be removed in future versions. Please switch to WebDriver BiDi.
 ]]></system-err>
   </testcase>
-  <testcase name="JsAlert" classname="TestCases.herokuapp_Local" time="2.356">
-    <system-out><![CDATA[Closed browser: EdgeDriver: MicrosoftEdge on windows (null)
-=== Starting setup for: edge ===
-]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 12:53:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-]]></system-err>
-  </testcase>
-  <testcase name="JsAlert" classname="TestCases.herokuapp_Local" time="2.326">
+  <testcase name="JsAlert" classname="TestCases.herokuapp_Local" time="3.485">
     <system-out><![CDATA[Closed browser: ChromeDriver: chrome on windows (null)
 ]]></system-out>
+    <system-err><![CDATA[Jul 19, 2025 8:33:54 PM org.openqa.selenium.firefox.FirefoxDriver <init>
+WARNING: CDP support for Firefox is deprecated and will be removed in future versions. Please switch to WebDriver BiDi.
+]]></system-err>
+  </testcase>
+  <testcase name="setup[edge, latest, local, public void TestCases.herokuapp_Local.searchGoogle()](0)" classname="TestCases.herokuapp_Local" time="0.609">
+    <failure message="Browser setup failed for: edge" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: Browser setup failed for: edge
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+	... 24 more
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
+]]></failure>
+    <system-out><![CDATA[=== Starting setup for: edge ===
+]]></system-out>
+    <system-err><![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at Base.BaseClassLocal.setup(BaseClassLocal.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 29 more
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:988)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1818)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1688)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
+	... 33 more
+]]></system-err>
   </testcase>
   <testcase name="searchGoogle" classname="TestCases.herokuapp_Local" time="0.0">
-    <skipped message="Browser setup failed for: Firefox"/>
+    <skipped message="Browser setup failed for: edge"/>
+  </testcase>
+  <testcase name="searchGoogle" classname="TestCases.herokuapp_Local" time="1.81">
     <system-out><![CDATA[Closed browser: FirefoxDriver: firefox on windows (null)
 === Starting setup for: Firefox ===
-Closed browser: EdgeDriver: MicrosoftEdge on windows (null)
-=== Starting setup for: edge ===
 ]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 12:53:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-Jun 29, 2025 12:53:10 PM org.openqa.selenium.firefox.FirefoxDriver <init>
+  </testcase>
+  <testcase name="searchGoogle" classname="TestCases.herokuapp_Local" time="1.147">
+    <system-out><![CDATA[Closed browser: FirefoxDriver: firefox on windows (null)
+=== Starting setup for: Firefox ===
+]]></system-out>
+    <system-err><![CDATA[Jul 19, 2025 8:34:00 PM org.openqa.selenium.firefox.FirefoxDriver <init>
 WARNING: CDP support for Firefox is deprecated and will be removed in future versions. Please switch to WebDriver BiDi.
-]]></system-err>
-  </testcase>
-  <testcase name="searchGoogle" classname="TestCases.herokuapp_Local" time="1.757">
-    <system-out><![CDATA[Closed browser: ChromeDriver: chrome on windows (null)
-=== Starting setup for: chrome ===
-]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 12:53:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
-]]></system-err>
-  </testcase>
-  <testcase name="searchGoogle" classname="TestCases.herokuapp_Local" time="1.699">
-    <system-out><![CDATA[Closed browser: EdgeDriver: MicrosoftEdge on windows (null)
-=== Starting setup for: edge ===
-]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 12:53:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>
 </testsuite>

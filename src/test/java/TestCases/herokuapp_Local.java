@@ -137,13 +137,13 @@ public class herokuapp_Local extends BaseClassLocal {
     public void searchGoogle() {
     	getDriver().get("https://www.google.com/");
     	getTest().info("URL Entered");
-    	getDriver().findElement(By.name("q")).sendKeys("Mukesh balodi");
-    	getTest().info("text entered into search bar Mukesh balodi");
+    	getDriver().findElement(By.name("q")).sendKeys("Mukesh");
+    	getTest().info("text entered into search bar Mukesh");
     	Actions action = new Actions(getDriver());
     	action.keyDown(Keys.ENTER);
     	getTest().info("text entered into search bar as Mukesh balodi");
     String actualTitle=	getDriver().getTitle();
-    String expectedTitle = "Mukesh balodi - Google Search";
+    String expectedTitle = "Mukesh - Google Search";
     if(actualTitle.equals(expectedTitle)) {
     	getTest().pass(" Test pass title Matched title is : "+getDriver().getTitle());
     }
