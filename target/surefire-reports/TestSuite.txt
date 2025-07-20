@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 28, Failures: 7, Errors: 0, Skipped: 7, Time elapsed: 66.33 s <<< FAILURE! -- in TestSuite
-TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)](0) -- Time elapsed: 3.088 s <<< FAILURE!
+Tests run: 28, Failures: 7, Errors: 0, Skipped: 7, Time elapsed: 81.75 s <<< FAILURE! -- in TestSuite
+TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)](0) -- Time elapsed: 4.039 s <<< FAILURE!
 java.lang.RuntimeException: Browser setup failed for: edge
 	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -72,7 +72,7 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
 	... 33 more
 
-TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)](0) -- Time elapsed: 1.074 s <<< FAILURE!
+TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)](0) -- Time elapsed: 1.286 s <<< FAILURE!
 java.lang.RuntimeException: Browser setup failed for: edge
 	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -142,7 +142,7 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
 	... 33 more
 
-TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)](0) -- Time elapsed: 0.570 s <<< FAILURE!
+TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)](0) -- Time elapsed: 0.261 s <<< FAILURE!
 java.lang.RuntimeException: Browser setup failed for: edge
 	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -212,7 +212,7 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
 	... 33 more
 
-TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)](0) -- Time elapsed: 0.195 s <<< FAILURE!
+TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.TestLogin(java.lang.String,java.lang.String)](0) -- Time elapsed: 0.709 s <<< FAILURE!
 java.lang.RuntimeException: Browser setup failed for: edge
 	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -282,7 +282,7 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
 	... 33 more
 
-TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.inValidLogin()](0) -- Time elapsed: 0.685 s <<< FAILURE!
+TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.inValidLogin()](0) -- Time elapsed: 0.840 s <<< FAILURE!
 java.lang.RuntimeException: Browser setup failed for: edge
 	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -352,7 +352,7 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
 	... 33 more
 
-TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.JsAlert()](0) -- Time elapsed: 0.086 s <<< FAILURE!
+TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.JsAlert()](0) -- Time elapsed: 0.332 s <<< FAILURE!
 java.lang.RuntimeException: Browser setup failed for: edge
 	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -422,7 +422,7 @@ Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
 	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:267)
 	... 33 more
 
-TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.searchGoogle()](0) -- Time elapsed: 0.609 s <<< FAILURE!
+TestCases.herokuapp_Local.setup[edge, latest, local, public void TestCases.herokuapp_Local.searchGoogle()](0) -- Time elapsed: 1.180 s <<< FAILURE!
 java.lang.RuntimeException: Browser setup failed for: edge
 	at Base.BaseClassLocal.setup(BaseClassLocal.java:115)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
